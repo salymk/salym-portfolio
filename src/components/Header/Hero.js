@@ -9,7 +9,7 @@ const Hero = () => {
           Hello, I'm <strong className="has-text-primary">Salym Akhmedov</strong>.
         </h1>
         <h1 className="title">
-          I'm a frontend web developer
+          I'm a frontend web developer.
         </h1>
         <button class="button is-primary is-outlined">Find out more</button>
       </div>
