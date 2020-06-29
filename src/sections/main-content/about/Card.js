@@ -1,5 +1,5 @@
 import React from 'react'
-import Salym from '../../images/salym-sq-img.jpg'
+import Salym from '../../../images/salym-sq-img.jpg'
 
 const Card = () => {
   return (

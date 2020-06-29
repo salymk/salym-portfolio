@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from './sections/header/Hero'
 import Navbar from './sections/header/Navbar'
-import About from './sections/about/About'
+import About from './sections/main-content/about/About'
 
 
 function App() {
