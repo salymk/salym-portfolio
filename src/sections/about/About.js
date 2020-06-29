@@ -13,7 +13,18 @@ const About = () => {
               <Card />
             </div>
             <div className="column is-half">
-  
+            <div className="tags">
+              <span className="tag is-large is-primary">HTML</span>
+              <span className="tag is-large is-primary">CSS</span>
+              <span className="tag is-large is-primary">JavaScript</span>
+              <span className="tag is-large is-primary">React</span>
+              <span className="tag is-large is-primary">SASS</span>
+              <span className="tag is-large is-primary">Bulma CSS</span>
+              <span className="tag is-large is-primary">Node.js</span>
+              <span className="tag is-large is-primary">Express.js</span>
+              <span className="tag is-large is-primary">GIT/GitHub</span>
+
+            </div>
             </div>
           </div>
         </div>
