@@ -1,20 +1,21 @@
 import React from 'react'
-import Card from '../../components/Card'
+import Card from './Card'
 
 const About = () => {
   return (
     <section className="section">
-      <div className="container">
-        <h1 className="title is-1 has-text-centered">About</h1>
-
-        <div className="columns">
-          <div className="column">
-          About me
-
-          <Card />
-          
+      <div className="columns">
+        
+        <div className="column">
+          <h1 className="title has-text-centered is-2">About</h1>
+          <div className="columns is-centered px-6 mt-4">
+            <div className="column is-two-fifths px-6">
+              <Card />
+            </div>
+            <div className="column is-half">
+  
+            </div>
           </div>
-          <div className="column">Skills</div>
         </div>
       </div>
     </section>

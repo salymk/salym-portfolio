@@ -11,7 +11,7 @@ const Hero = () => {
           <h1 className="title">
             I'm a frontend web developer.
           </h1>
-          <button class="button is-primary is-outlined">Find out more</button>
+          <button className="button is-primary is-outlined">Find out more</button>
         </div>
       </div>
     </section>
