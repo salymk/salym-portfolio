@@ -7,6 +7,7 @@ const Contact = () => {
         <div className="columns">
           <div className="column">
             <h1 className="title has-text-white has-text-centered is-1">Contact</h1>
+            <h2 className="subtitle has-text-white has-text-centered">Have questions or want to work together?</h2>
           </div>
         </div>
         <div className="columns is-centered">
