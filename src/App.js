@@ -4,6 +4,7 @@ import Navbar from './sections/header/Navbar'
 import About from './sections/main-content/about/About'
 import Projects from './sections/main-content/projects/Projects'
 import Contact from './sections/main-content/contact/Contact'
+import Footer from './sections/main-content/footer/Footer'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   )
 }
