@@ -5,13 +5,20 @@
 
 // Set your brand colors
 $green: hsl(171, 100%, 41%);
+$red: red;
+$white: hsl(0, 0%, 100%);
 
-// Update Bulma's global variables
+
+$family-sans-serif: "Karla", BlinkMacSystemFont, -apple-system, "Helvetica",
+"Arial", sans-serif;
+$radius: 5px;
+
+
+// Navbar custom styles
 $link: $green;
-
-// Update some of Bulma's component variables
-
-
+$navbar-background-color: $green;
+$navbar-height: 3.5rem;
+$navbar-item-hover-background-color: $white;
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
