@@ -11,7 +11,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar-menu">
-        <div className="navbar-start">
+        <div className="navbar-start is-size-4-tablet ml-6">
           <a className="navbar-item">Home</a>
           <a className="navbar-item">About</a>
           <a className="navbar-item">Projects</a>
