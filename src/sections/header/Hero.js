@@ -11,7 +11,14 @@ const Hero = () => {
           <h1 className="title">
             I'm a frontend web developer.
           </h1>
-          <button className="button is-primary is-outlined">Find out more</button>
+
+          <button className="button is-primary is-outlined">
+            <span>Find out more</span>
+            <span className="icon is-small">
+              <i className="fas fa-arrow-down"></i>
+            </span>
+        </button>
+
         </div>
       </div>
     </section>
