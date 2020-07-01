@@ -1,57 +1,71 @@
 import React from 'react';
+import BulmaLogo from '../../../images/bulma-logo.png';
 
 const Skills = () => {
 	return (
-		<div className='container'>
-			<div className='columns is-mobile'>
-				<div className='column'>
-					<span class='icon'>
-						<i class='fab fa-5x fa-html5'></i>
+		<div className='tile is-ancestor has-text-centered wrap-tiles'>
+			<div className='tile is-parent is-vertical'>
+				<article className='tile is-child'>
+					<p className='subtitle is-4 mt-6'>HTML</p>
+					<span className='icon mt-5'>
+						<i className='fab fa-7x fa-html5 html-logo-color'></i>
 					</span>
-				</div>
+				</article>
 
-				<div className='column'>
-					<span class='icon'>
-						<i class='fab fa-5x fa-css3-alt'></i>
+				<article className='tile is-child'>
+					<p className='subtitle is-4 mt-6'>CSS</p>
+					<span className='icon mt-5'>
+						<i className='fab fa-7x fa-css3-alt has-text-info	'></i>
 					</span>
-				</div>
+				</article>
+			</div>
 
-				<div className='column'>
-					<span class='icon'>
-						<i class='fab fa-5x fa-css3-alt'></i>
+			<div className='tile is-parent is-vertical'>
+				<article className='tile is-child'>
+					<p className='subtitle is-4 mt-6'>JavaScript</p>
+					<span className='icon mt-5'>
+						<i className='fab fa-7x fa-js has-text-warning	'></i>
 					</span>
-				</div>
+				</article>
 
-				<div className='column'>
-					<span class='icon'>
-						<i class='fab fa-5x fa-css3-alt'></i>
+				<article className='tile is-child'>
+					<p className='subtitle is-4 mt-6'>React</p>
+					<span className='icon mt-5'>
+						<i className='fab fa-7x fa-react has-text-link'></i>
 					</span>
-				</div>
+				</article>
+			</div>
 
-				<div className='column'>
-					<span class='icon'>
-						<i class='fab fa-5x fa-css3-alt'></i>
-					</span>
-				</div>
+			<div className='tile is-parent is-vertical'>
+				<article className='tile is-child'>
+					<p className='subtitle is-4 mt-6'>Bulma CSS</p>
+					<img className='bulma-logo' src={BulmaLogo} alt='Bulma CSS logo' />
+				</article>
 
-				<div className='column'>
-					<span class='icon'>
-						<i class='fab fa-5x fa-css3-alt'></i>
+				<article className='tile is-child'>
+					<p className='subtitle is-4 mt-6'>Node.js</p>
+					<span className='icon mt-5'>
+						<i className='fab fa-7x fa-node-js has-text-success	'></i>
 					</span>
-				</div>
+				</article>
+			</div>
+
+			<div className='tile is-parent is-vertical'>
+				<article className='tile is-child'>
+					<p className='subtitle is-4 mt-6'>Git</p>
+					<span className='icon mt-5'>
+						<i className='fab fa-7x fa-git-alt git-logo-color'></i>
+					</span>
+				</article>
+
+				<article className='tile is-child'>
+					<p className='subtitle is-4 mt-6'>GitHub</p>
+					<span className='icon mt-5'>
+						<i className='fab fa-7x fa-github github-logo-color'></i>
+					</span>
+				</article>
 			</div>
 		</div>
-
-		// <div class="tags">
-		//   <span class="tag is-medium is-primary">HTML</span>
-		//   <span class="tag is-medium is-primary">CSS</span>
-		//   <span class="tag is-medium is-primary">JavaScript</span>
-		//   <span class="tag is-medium is-primary">React</span>
-		//   <span class="tag is-medium is-primary">Bulma CSS</span>
-		//   <span class="tag is-medium is-primary">Node.js</span>
-		//   <span class="tag is-medium is-primary">Express.js</span>
-		//   <span class="tag is-medium is-primary">GIT/GitHub</span>
-		// </div>
 	);
 };
 
