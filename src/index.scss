@@ -32,6 +32,19 @@ $navbar-item-hover-background-color: $white;
 	max-width: 12em;
 }
 
+// Custom colors
+.git-logo-color {
+	color: #f1502f;
+}
+
+.html-logo-color {
+	color: orange;
+}
+
+.github-logo-color {
+	color: black;
+}
+
 // Import only what you need from Bulma
 @import '../node_modules/bulma/sass/utilities/_all.sass';
 @import '../node_modules/bulma/sass/base/_all.sass';
