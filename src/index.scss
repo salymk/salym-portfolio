@@ -20,6 +20,18 @@ $navbar-background-color: $green;
 $navbar-height: 3.5rem;
 $navbar-item-hover-background-color: $white;
 
+// Custome image size
+.custom-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 1rem;
+}
+
+// Custom text sizes
+.text-size {
+  font-size: 1.15em;
+}
+
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
