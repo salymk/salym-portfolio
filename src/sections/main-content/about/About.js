@@ -17,7 +17,7 @@ const About = () => {
 						/>
 					</div>
 					<div className='column is-6 is-mobile'>
-						<h1 className='title is-3 mb-1 is-size-2-mobile has-text-centered-mobile'>
+						<h1 className='title is-3 is-size-2-mobile has-text-centered-mobile'>
 							Who Is This Guy?
 						</h1>
 						<div className='content is-size-5-desktop is-size-6-tablet is-size-5-mobile'>
@@ -27,7 +27,7 @@ const About = () => {
 								coding, with a desire to apply his skills on larger development
 								teams. Eager to tackle more complex projects and continue to
 								find ways to maximize user experience.
-								<a classNameName='has-text-primary'>
+								<a className='has-text-primary'>
 									{' '}
 									Let's create something great together!
 								</a>
