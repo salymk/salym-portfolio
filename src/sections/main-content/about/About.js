@@ -10,7 +10,12 @@ const About = () => {
 				<h1 className='title has-text-centered is-1 mb-6'>About</h1>
 				<div className='columns is-centered'>
 					<div className='column is-4'>
-						<Card />
+						<img
+							className='image custom-img'
+							src={Salym2}
+							alt='Salym Akhmedov in the mountains'
+						/>
+						;
 					</div>
 					<div className='column is-6 is-mobile'>
 						<h1 className='title is-3'>Who Is This Guy?</h1>
@@ -27,9 +32,6 @@ const About = () => {
 						</p>
 					</div>
 				</div>
-			</div>
-			<div className='container'>
-				<Skills />
 			</div>
 		</div>
 	);

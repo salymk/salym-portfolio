@@ -2,15 +2,7 @@ import React from 'react';
 import Salym2 from '../../../images/mountain-salym.jpg';
 
 const Card = () => {
-	return (
-		<div className='card'>
-			<div className='card-image'>
-				<figure className='image '>
-					<img src={Salym2} alt='Salym Akhmedov in the mountains' />
-				</figure>
-			</div>
-		</div>
-	);
+	return <img src={Salym2} alt='Salym Akhmedov in the mountains' />;
 };
 
 export default Card;

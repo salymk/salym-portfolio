@@ -8,11 +8,9 @@ $green: hsl(171, 100%, 41%);
 $red: red;
 $white: hsl(0, 0%, 100%);
 
-
-$family-sans-serif: "Karla", BlinkMacSystemFont, -apple-system, "Helvetica",
-"Arial", sans-serif;
+$family-sans-serif: 'Karla', BlinkMacSystemFont, -apple-system, 'Helvetica',
+	'Arial', sans-serif;
 $radius: 5px;
-
 
 // Navbar custom styles
 $link: $green;
@@ -22,23 +20,21 @@ $navbar-item-hover-background-color: $white;
 
 // Custome image size
 .custom-img {
-  width: 250px;
-  height: 250px;
-  border-radius: 1rem;
+	border-radius: 1rem;
 }
 
 // Custom text sizes
 .text-size {
-  font-size: 1.15em;
+	font-size: 1.15em;
 }
 
 // Import only what you need from Bulma
-@import "../node_modules/bulma/sass/utilities/_all.sass";
-@import "../node_modules/bulma/sass/base/_all.sass";
-@import "../node_modules/bulma/sass/elements/button.sass";
-@import "../node_modules/bulma/sass/elements/container.sass";
-@import "../node_modules/bulma/sass/elements/title.sass";
-@import "../node_modules/bulma/sass/form/_all.sass";
-@import "../node_modules/bulma/sass/components/navbar.sass";
-@import "../node_modules/bulma/sass/layout/hero.sass";
-@import "../node_modules/bulma/sass/layout/section.sass";
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/elements/button.sass';
+@import '../node_modules/bulma/sass/elements/container.sass';
+@import '../node_modules/bulma/sass/elements/title.sass';
+@import '../node_modules/bulma/sass/form/_all.sass';
+@import '../node_modules/bulma/sass/components/navbar.sass';
+@import '../node_modules/bulma/sass/layout/hero.sass';
+@import '../node_modules/bulma/sass/layout/section.sass';
