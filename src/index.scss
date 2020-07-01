@@ -28,6 +28,10 @@ $navbar-item-hover-background-color: $white;
 	font-size: 1.15em;
 }
 
+.bulma-logo {
+	max-width: 12em;
+}
+
 // Import only what you need from Bulma
 @import '../node_modules/bulma/sass/utilities/_all.sass';
 @import '../node_modules/bulma/sass/base/_all.sass';
