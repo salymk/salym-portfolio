@@ -45,6 +45,14 @@ $navbar-item-hover-background-color: $white;
 	color: black;
 }
 
+// Grid for skills section
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+	grid-gap: 0.5rem;
+	align-items: flex-start;
+}
+
 // Import only what you need from Bulma
 @import '../node_modules/bulma/sass/utilities/_all.sass';
 @import '../node_modules/bulma/sass/base/_all.sass';
