@@ -1,7 +1,7 @@
 import React from 'react';
 import Salym2 from '../../../images/mountain-salym.jpg';
 
-const Card = () => {
+const AboutMe = () => {
 	return (
 		<div className='columns is-centered mt-6'>
 			<div className='column is-4'>
@@ -33,7 +33,7 @@ const Card = () => {
 	);
 };
 
-export default Card;
+export default AboutMe;
 
 // <p>
 // A fast learner and highly motivated frontend web developer with almost two years of experience.
