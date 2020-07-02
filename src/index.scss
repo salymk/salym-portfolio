@@ -53,6 +53,10 @@ $navbar-item-hover-background-color: $white;
 	align-items: flex-start;
 }
 
+.grid-gab {
+	grid-gap: 1rem;
+}
+
 // Import only what you need from Bulma
 @import '../node_modules/bulma/sass/utilities/_all.sass';
 @import '../node_modules/bulma/sass/base/_all.sass';

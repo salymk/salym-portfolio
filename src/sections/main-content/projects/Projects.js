@@ -7,10 +7,10 @@ const Projects = () => {
 				Projects
 			</h1>
 
-			<div className='container mt-6 grid'>
+			<div className='container mt-6 grid grid-gab'>
 				<div className='card'>
 					<div className='card-content has-text-centered'>
-						<p className='subtitle is-4'>Employee Directory</p>
+						<p className='title is-4'>Employee Directory</p>
 					</div>
 					<div className='card-image'>
 						<figure className='image is-125x125'>
