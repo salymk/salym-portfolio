@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = () => {
 	return (
-		<div className='section has-background-white-ter'>
+		<div className='section'>
 			<div className='container'>
 				<div className='columns'>
 					<div className='column has-text-centered'>

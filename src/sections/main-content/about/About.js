@@ -12,11 +12,6 @@ const About = () => {
 				</h1>
 				<Card />
 			</div>
-
-			<h1 className='title is-1 has-text-centered mt-6 is-uppercase'>Tools</h1>
-			<div className='container'>
-				<Skills />
-			</div>
 		</div>
 	);
 };
