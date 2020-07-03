@@ -5,11 +5,11 @@ const Hero = () => {
 		<section className='hero is-fullheight'>
 			<div className='hero-body'>
 				<div className='container has-text-centered'>
-					<h1 className='title is-size-3-mobile is-size-1-tablet mb-0'>
+					<h1 className='title is-size-4-mobile is-size-2-tablet mb-0'>
 						Hello, I'm{' '}
 						<strong className='has-text-primary'>Salym Akhmedov</strong>.
 					</h1>
-					<h1 className='title is-size-3-mobile is-size-1-tablet'>
+					<h1 className='title is-size-4-mobile is-size-2-tablet'>
 						I'm a frontend web developer.
 					</h1>
 
