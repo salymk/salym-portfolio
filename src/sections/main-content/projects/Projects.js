@@ -7,8 +7,8 @@ const Projects = () => {
 				Projects
 			</h1>
 
-			<div className='container mt-6 grid grid-gap'>
-				<div className='card'>
+			<div className='container mt-6 grid-cards grid-gap'>
+				<div className='card card-shadow'>
 					<div className='card-content has-text-centered'>
 						<p className='title is-4 is-size-4-tablet'>Employee Directory</p>
 					</div>
