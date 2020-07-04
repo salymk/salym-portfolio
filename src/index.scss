@@ -82,13 +82,6 @@ $navbar-item-hover-background-color: $white;
 	grid-gap: 1rem;
 }
 
-// Image hover show content
-.flex-overlay {
-	display: flex;
-	flex-direction: column;
-	align-content: space-between;
-}
-
 // Import only what you need from Bulma
 @import '../node_modules/bulma/sass/utilities/_all.sass';
 @import '../node_modules/bulma/sass/base/_all.sass';
