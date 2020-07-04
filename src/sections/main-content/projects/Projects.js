@@ -8,117 +8,22 @@ const Projects = () => {
 			</h1>
 
 			<div className='container mt-6 grid-cards grid-gap'>
-				<div className='card card-shadow'>
-					<div className='card-content has-text-centered'>
-						<p className='title is-4 is-size-4-tablet'>Employee Directory</p>
-					</div>
-					<div className='card-image'>
-						<figure className='image is-125x125'>
-							<a href=''>
-								<img
-									src='https://bulma.io/images/placeholders/1280x960.png'
-									alt='Placeholder image'
-								/>
-							</a>
-						</figure>
-					</div>
-				</div>
-
 				<div className='card'>
-					<div className='card-content'>
-						<p className='title is-4'>Employee Directory</p>
-					</div>
 					<div className='card-image'>
-						<figure className='image is-125x125'>
+						<figure className='image is-4by3'>
 							<img
 								src='https://bulma.io/images/placeholders/1280x960.png'
 								alt='Placeholder image'
 							/>
 						</figure>
 					</div>
-				</div>
+					<div className='card-content is-overlay flex-overlay has-text-centered'>
+						<div className='container'>
+							<h1 className='title is-4 mb-1'>Employee Directory</h1>
+							<p className='is-italic'>HTML / CSS / JavaScript</p>
+						</div>
 
-				<div className='card'>
-					<div className='card-content'>
-						<p className='title is-4'>Employee Directory</p>
-					</div>
-					<div className='card-image'>
-						<figure className='image is-125x125'>
-							<img
-								src='https://bulma.io/images/placeholders/1280x960.png'
-								alt='Placeholder image'
-							/>
-						</figure>
-					</div>
-				</div>
-
-				<div className='card'>
-					<div className='card-content'>
-						<p className='title is-4'>Employee Directory</p>
-					</div>
-					<div className='card-image'>
-						<figure className='image is-125x125'>
-							<img
-								src='https://bulma.io/images/placeholders/1280x960.png'
-								alt='Placeholder image'
-							/>
-						</figure>
-					</div>
-				</div>
-
-				<div className='card'>
-					<div className='card-content'>
-						<p className='title is-4'>Employee Directory</p>
-					</div>
-					<div className='card-image'>
-						<figure className='image is-125x125'>
-							<img
-								src='https://bulma.io/images/placeholders/1280x960.png'
-								alt='Placeholder image'
-							/>
-						</figure>
-					</div>
-				</div>
-
-				<div className='card'>
-					<div className='card-content'>
-						<p className='title is-4'>Employee Directory</p>
-					</div>
-					<div className='card-image'>
-						<figure className='image is-125x125'>
-							<img
-								src='https://bulma.io/images/placeholders/1280x960.png'
-								alt='Placeholder image'
-							/>
-						</figure>
-					</div>
-				</div>
-
-				<div className='card'>
-					<div className='card-content'>
-						<p className='title is-4'>Employee Directory</p>
-					</div>
-					<div className='card-image'>
-						<figure className='image is-125x125'>
-							<img
-								src='https://bulma.io/images/placeholders/1280x960.png'
-								alt='Placeholder image'
-							/>
-						</figure>
-					</div>
-				</div>
-
-				<div className='card'>
-					<div className='card-content'>
-						<p className='title is-4'>Employee Directory</p>
-					</div>
-					<div className='card-image'>
-						<figure className='image is-125x125'>
-							<img
-								src='https://bulma.io/images/placeholders/1280x960.png'
-								alt='Placeholder image'
-							/>
-						</figure>
+						<button className='button is-primary'>Learn more</button>
 					</div>
 				</div>
 			</div>

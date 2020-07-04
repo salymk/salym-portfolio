@@ -73,7 +73,7 @@ $navbar-item-hover-background-color: $white;
 
 .grid-cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-gap: 2rem;
 	align-items: flex-start;
 }
@@ -82,8 +82,11 @@ $navbar-item-hover-background-color: $white;
 	grid-gap: 1rem;
 }
 
-.card-shadows {
-	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+// Image hover show content
+.flex-overlay {
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
 }
 
 // Import only what you need from Bulma
