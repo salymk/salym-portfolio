@@ -1,4 +1,5 @@
 import React from 'react';
+import Salym2 from '../../../images/mountain-salym.jpg';
 
 const Projects = () => {
 	return (
@@ -17,13 +18,36 @@ const Projects = () => {
 							/>
 						</figure>
 					</div>
-					<div className='card-content is-overlay flex-overlay has-text-centered'>
-						<div className='container'>
-							<h1 className='title is-4 mb-1'>Employee Directory</h1>
-							<p className='is-italic'>HTML / CSS / JavaScript</p>
+					<div className='card-content'>
+						<div className='media'>
+							<div className='media-content'>
+								<p className='title is-3'>Employee Directory</p>
+								<p className='subtitle is-5 has-text-primary'>
+									HTML / CSS / JS
+								</p>
+							</div>
 						</div>
 
-						<button className='button is-primary'>Learn more</button>
+						<div className='content'>
+							In this project, I used an API to grab employee data and displayed
+							it on a web page. You can search for the employees with their
+							names and you click on each employee and it opens a modal with
+							more info on the employee.
+						</div>
+
+						<button className='button is-medium mr-3 is-mobile'>
+							<span className='icon'>
+								<i className='fab fa-github'></i>
+							</span>
+							<span>GitHub</span>
+						</button>
+
+						<button className='button is-medium is-mobile'>
+							<span className='icon'>
+								<i className='fab fa-github'></i>
+							</span>
+							<span>GitHub</span>
+						</button>
 					</div>
 				</div>
 			</div>
