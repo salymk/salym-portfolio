@@ -20,8 +20,94 @@ const Projects = () => {
 					<div className='card-content'>
 						<div className='media'>
 							<div className='media-content'>
-								<p className='title is-3'>Employee Directory</p>
-								<p className='subtitle is-5 has-text-primary'>
+								<p className='title is-3 is-size-4-mobile has-text-centered-mobile	'>
+									Employee Directory
+								</p>
+								<p className='subtitle is-5 is-size-6-mobile has-text-centered-mobile has-text-primary'>
+									HTML / CSS / JS
+								</p>
+							</div>
+						</div>
+
+						<div className='content'>
+							In this project, I used an API to grab employee data and displayed
+							it on a web page. You can search for the employees with their
+							names and you click on each employee and it opens a modal with
+							more info on the employee.
+						</div>
+
+						<div className='buttons'>
+							<button className='button is-medium'>
+								<span className='icon'>
+									<i className='fab fa-github'></i>
+								</span>
+								<span>GitHub</span>
+							</button>
+
+							<button className='button is-medium'>
+								<span>Learn more</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div className='card'>
+					<div className='card-image'>
+						<figure className='image is-4by3'>
+							<img
+								src='https://bulma.io/images/placeholders/1280x960.png'
+								alt='Placeholder image'
+							/>
+						</figure>
+					</div>
+					<div className='card-content'>
+						<div className='media'>
+							<div className='media-content'>
+								<p className='title is-3 is-size-4-mobile has-text-centered-mobile	'>
+									Employee Directory
+								</p>
+								<p className='subtitle is-5 is-size-6-mobile has-text-centered-mobile has-text-primary'>
+									HTML / CSS / JS
+								</p>
+							</div>
+						</div>
+
+						<div className='content'>
+							In this project, I used an API to grab employee data and displayed
+							it on a web page. You can search for the employees with their
+							names and you click on each employee and it opens a modal with
+							more info on the employee.
+						</div>
+
+						<div className='buttons'>
+							<button className='button is-medium'>
+								<span className='icon'>
+									<i className='fab fa-github'></i>
+								</span>
+								<span>GitHub</span>
+							</button>
+
+							<button className='button is-medium'>
+								<span>Learn more</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div className='card'>
+					<div className='card-image'>
+						<figure className='image is-4by3'>
+							<img
+								src='https://bulma.io/images/placeholders/1280x960.png'
+								alt='Placeholder image'
+							/>
+						</figure>
+					</div>
+					<div className='card-content'>
+						<div className='media'>
+							<div className='media-content'>
+								<p className='title is-3 is-size-4-mobile has-text-centered-mobile	'>
+									Employee Directory
+								</p>
+								<p className='subtitle is-5 is-size-6-mobile has-text-centered-mobile has-text-primary'>
 									HTML / CSS / JS
 								</p>
 							</div>
@@ -61,8 +147,10 @@ const Projects = () => {
 					<div className='card-content'>
 						<div className='media'>
 							<div className='media-content'>
-								<p className='title is-3'>Employee Directory</p>
-								<p className='subtitle is-5 has-text-primary'>
+								<p className='title is-3 is-size-4-mobile has-text-centered-mobile	'>
+									Employee Directory
+								</p>
+								<p className='subtitle is-5 is-size-6-mobile has-text-centered-mobile has-text-primary'>
 									HTML / CSS / JS
 								</p>
 							</div>
@@ -101,8 +189,10 @@ const Projects = () => {
 					<div className='card-content'>
 						<div className='media'>
 							<div className='media-content'>
-								<p className='title is-3'>Employee Directory</p>
-								<p className='subtitle is-5 has-text-primary'>
+								<p className='title is-3 is-size-4-mobile has-text-centered-mobile	'>
+									Employee Directory
+								</p>
+								<p className='subtitle is-5 is-size-6-mobile has-text-centered-mobile has-text-primary'>
 									HTML / CSS / JS
 								</p>
 							</div>
@@ -141,8 +231,10 @@ const Projects = () => {
 					<div className='card-content'>
 						<div className='media'>
 							<div className='media-content'>
-								<p className='title is-3'>Employee Directory</p>
-								<p className='subtitle is-5 has-text-primary'>
+								<p className='title is-3 is-size-4-mobile has-text-centered-mobile	'>
+									Employee Directory
+								</p>
+								<p className='subtitle is-5 is-size-6-mobile has-text-centered-mobile has-text-primary'>
 									HTML / CSS / JS
 								</p>
 							</div>
@@ -181,8 +273,10 @@ const Projects = () => {
 					<div className='card-content'>
 						<div className='media'>
 							<div className='media-content'>
-								<p className='title is-3'>Employee Directory</p>
-								<p className='subtitle is-5 has-text-primary'>
+								<p className='title is-3 is-size-4-mobile has-text-centered-mobile	'>
+									Employee Directory
+								</p>
+								<p className='subtitle is-5 is-size-6-mobile has-text-centered-mobile has-text-primary'>
 									HTML / CSS / JS
 								</p>
 							</div>
@@ -222,8 +316,10 @@ const Projects = () => {
 					<div className='card-content'>
 						<div className='media'>
 							<div className='media-content'>
-								<p className='title is-3'>Employee Directory</p>
-								<p className='subtitle is-5 has-text-primary'>
+								<p className='title is-3 is-size-4-mobile has-text-centered-mobile	'>
+									Employee Directory
+								</p>
+								<p className='subtitle is-5 is-size-6-mobile has-text-centered-mobile has-text-primary'>
 									HTML / CSS / JS
 								</p>
 							</div>
