@@ -6,7 +6,7 @@ const Contact = () => {
 			<div className='container'>
 				<div className='columns'>
 					<div className='column'>
-						<h1 className='title has-text-white has-text-centered is-1'>
+						<h1 className='title is-2 is-uppercase has-text-white has-text-centered'>
 							Contact
 						</h1>
 						<h2 className='subtitle has-text-white has-text-centered'>
@@ -35,7 +35,9 @@ const Contact = () => {
 						</div>
 
 						<div className='control'>
-							<button className='button'>Submit</button>
+							<button className='button is-primary is-inverted is-medium'>
+								Submit
+							</button>
 						</div>
 					</div>
 				</div>
