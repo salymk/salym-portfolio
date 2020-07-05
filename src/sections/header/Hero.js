@@ -3,7 +3,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Hero = () => {
 	return (
-		<section className='hero is-fullheight has-bg-img'>
+		<section className='hero is-fullheight has-bg-img' id='home'>
 			<div className='hero-body'>
 				<div className='container has-text-centered'>
 					<h1 className='title has-text-white is-size-4-mobile is-size-2-tablet mb-0'>
