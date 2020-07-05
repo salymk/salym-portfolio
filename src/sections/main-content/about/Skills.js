@@ -4,7 +4,9 @@ import BulmaLogo from '../../../images/bulma-logo.png';
 const Skills = () => {
 	return (
 		<div className='section has-background-primary-light'>
-			<h1 className='title is-1 has-text-centered mt-6 is-uppercase'>Tools</h1>
+			<h1 className='title is-1 has-text-centered mt-6 is-uppercase' id='tools'>
+				Tools
+			</h1>
 
 			<div className='container grid'>
 				<div className='has-text-centered'>

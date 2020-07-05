@@ -27,7 +27,7 @@ const Navbar = () => {
 							spy={true}
 							smooth={true}
 							offset={-100}
-							duration={500}>
+							duration={1000}>
 							Home
 						</Link>
 					</a>
@@ -38,12 +38,43 @@ const Navbar = () => {
 							spy={true}
 							smooth={true}
 							offset={-100}
-							duration={500}>
+							duration={1000}>
 							About
 						</Link>
 					</a>
-					<a className='navbar-item'>Projects</a>
-					<a className='navbar-item'>Contact</a>
+					<a className='navbar-item'>
+						<Link
+							activeClass='active'
+							to='tools'
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={1000}>
+							Tools
+						</Link>
+					</a>
+					<a className='navbar-item'>
+						<Link
+							activeClass='active'
+							to='projects'
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={1000}>
+							Projects
+						</Link>
+					</a>
+					<a className='navbar-item'>
+						<Link
+							activeClass='active'
+							to='contact'
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={1000}>
+							Contact
+						</Link>
+					</a>
 				</div>
 			</div>
 		</nav>
