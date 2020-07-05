@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import Salym2 from '../../../images/mountain-salym.jpg';
 
 const AboutMe = () => {
@@ -22,9 +23,19 @@ const AboutMe = () => {
 						coding, with a desire to apply his skills on larger development
 						teams. Eager to tackle more complex projects and continue to find
 						ways to maximize user experience.
-						<a className='has-text-primary'>
-							{' '}
-							Let's create something great together!
+						<a className='is-primary'>
+							<Link
+								activeClass='active'
+								to='contact'
+								spy={true}
+								smooth={true}
+								offset={-100}
+								duration={1000}>
+								{' '}
+								<span className='custom-link'>
+									Let's create something great together!
+								</span>
+							</Link>
 						</a>
 					</p>
 				</div>
