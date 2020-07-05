@@ -7,15 +7,18 @@
 $green: hsl(171, 100%, 41%);
 $red: red;
 $white: hsl(0, 0%, 100%);
+$link-color: hsl(150, 64%, 63%);
 
 // $family-sans-serif: 'Karla', BlinkMacSystemFont, -apple-system, 'Helvetica',
 // 	'Arial', sans-serif;
 $radius: 5px;
 
+// Update Bulma's global variables
+$link: black;
+
 // Navbar custom styles
 $navbar-background-color: $green;
 $navbar-height: 3.5rem;
-$navbar-item-hover-background-color: $white;
 
 // Custome image size
 .custom-img {
@@ -28,6 +31,9 @@ $navbar-item-hover-background-color: $white;
 // Custom text sizes
 .text-size {
 	font-size: 1.15em;
+}
+a {
+	color: black;
 }
 
 .bulma-logo {
@@ -64,6 +70,13 @@ $navbar-item-hover-background-color: $white;
 
 .grid-gab {
 	grid-gap: 1rem;
+}
+
+.custom-link {
+	color: $green;
+	&:hover {
+		color: $link-color;
+	}
 }
 
 @media only screen and (max-width: 768px) {
