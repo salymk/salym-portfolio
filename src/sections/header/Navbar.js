@@ -2,7 +2,10 @@ import React from 'react';
 
 const Navbar = () => {
 	return (
-		<nav className='navbar' role='navigation' aria-label='main navigation'>
+		<nav
+			className='navbar is-white has-shadow'
+			role='navigation'
+			aria-label='main navigation'>
 			<div className='navbar-brand'>
 				<a
 					role='button'
