@@ -32,9 +32,6 @@ $navbar-height: 3.5rem;
 .text-size {
 	font-size: 1.15em;
 }
-a {
-	color: black;
-}
 
 .bulma-logo {
 	max-width: 12em;
@@ -76,6 +73,18 @@ a {
 	color: $green;
 	&:hover {
 		color: $link-color;
+	}
+}
+
+.nav-link {
+	&.nav-span {
+		color: red;
+	}
+
+	&:hover {
+		.nav-span {
+			color: $green;
+		}
 	}
 }
 

@@ -2,6 +2,10 @@ import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Navbar = () => {
+	let navItemStyle = {
+		color: 'hsl(0, 0%, 7%)',
+		fontSize: '1.1em',
+	};
 	return (
 		<nav
 			className='navbar is-white has-shadow'
@@ -27,7 +31,9 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a className='navbar-item'>Home</a>
+						<a className='navbar-item nav-link' style={navItemStyle}>
+							<span className='nav-span'>Home</span>
+						</a>
 					</Link>
 
 					<Link
@@ -37,7 +43,9 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a className='navbar-item'>About</a>
+						<a className='navbar-item nav-link' style={navItemStyle}>
+							<span className='nav-span'>About</span>
+						</a>
 					</Link>
 
 					<Link
@@ -47,8 +55,11 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a className='navbar-item'>Tools</a>
+						<a className='navbar-item nav-link' style={navItemStyle}>
+							<span className='nav-span'>Tools</span>
+						</a>
 					</Link>
+
 					<Link
 						activeClass='active'
 						to='projects'
@@ -56,7 +67,9 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a className='navbar-item'>Projects</a>
+						<a className='navbar-item nav-link' style={navItemStyle}>
+							<span className='nav-span'>Home</span>
+						</a>
 					</Link>
 					<Link
 						activeClass='active'
@@ -65,7 +78,9 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a className='navbar-item'>Contact</a>
+						<a className='navbar-item nav-link' style={navItemStyle}>
+							<span className='nav-span'>Contact</span>
+						</a>
 					</Link>
 				</div>
 			</div>
