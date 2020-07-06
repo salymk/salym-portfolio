@@ -9,8 +9,6 @@ $red: red;
 $white: hsl(0, 0%, 100%);
 $link-color: hsl(150, 64%, 63%);
 
-// $family-sans-serif: 'Karla', BlinkMacSystemFont, -apple-system, 'Helvetica',
-// 	'Arial', sans-serif;
 $radius: 5px;
 
 // Update Bulma's global variables
@@ -31,6 +29,19 @@ $navbar-height: 2.7rem;
 // Custom text sizes
 .text-size {
 	font-size: 1.15em;
+}
+
+.title {
+	font-family: 'Bangers', cursive;
+}
+
+.subtitle-text {
+	font-family: 'Dancing Script', cursive;
+	font-size: 14px;
+}
+
+.content-size {
+	font-size: 14px;
 }
 
 .bulma-logo {

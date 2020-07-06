@@ -5,7 +5,7 @@ import photoGalleryIMG from '../images/portfolio/gallery_mockup.png';
 import onlineFormIMG from '../images/portfolio/desktop-form1.png';
 import responsiveDesignIMG from '../images/portfolio/responsive-design1.png';
 import blogSiteIMG from '../images/portfolio/blog-site.png';
-import weatherJournalIMG from '../images/portfolio/weather-journal.png';
+import weatherJournalIMG from '../images/portfolio/weather-journal2.png';
 
 export default [
 	{

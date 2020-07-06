@@ -34,9 +34,7 @@ const Navbar = () => {
 
 	return (
 		<nav
-			className={`navbar is-white ${
-				scrolled ? 'is-fixed-top is-primary' : 'has-shadow'
-			}`}
+			className={`navbar is-white ${scrolled ? 'is-fixed-top' : 'has-shadow'}`}
 			role='navigation'
 			aria-label='main navigation'>
 			<div className='navbar-brand'>

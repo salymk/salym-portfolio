@@ -13,7 +13,7 @@ const AboutMe = () => {
 				/>
 			</div>
 			<div className='column is-6 is-mobile'>
-				<h1 className='title mb-2 is-3 is-size-4-mobile is-size-2-widescreen has-text-centered-mobile'>
+				<h1 className='title has-text-primary mb-2 is-3 is-size-4-mobile is-size-2-widescreen has-text-centered-mobile'>
 					Who Is This Guy?
 				</h1>
 				<div className='content has-text-centered-mobile is-size-6-mobile is-size-6-tablet is-size-5-desktop is-size-4-widescreen'>

@@ -14,7 +14,7 @@ const Projects = () => {
 			<div className='container mt-6 grid-cards grid-gap'>
 				{projectsData.map((project) => (
 					<div className='card'>
-						<div className='card-image'>
+						<div className='card-image is-128x128'>
 							<figure className='image'>
 								<img src={project.image.src} alt={project.image.alt} />
 							</figure>
