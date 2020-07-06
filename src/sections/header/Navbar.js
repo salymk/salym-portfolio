@@ -51,7 +51,7 @@ const Navbar = () => {
 					<span aria-hidden='true'></span>
 				</a>
 			</div>
-			<div className='navbar-menu'>
+			<div className='navbar-menu has-text-centered'>
 				<div className='navbar-end is-size-5-tablet ml-6'>
 					<Link
 						activeClass='active'
