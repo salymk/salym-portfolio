@@ -15,10 +15,10 @@ $radius: 5px;
 
 // Update Bulma's global variables
 $link: black;
+$navbar-z: auto;
 
 // Navbar custom styles
-$navbar-background-color: $green;
-$navbar-height: 3.5rem;
+$navbar-height: 2.7rem;
 
 // Custome image size
 .custom-img {
@@ -106,6 +106,10 @@ $navbar-height: 3.5rem;
 .has-bg-img {
 	background: url('../src/images/hero-bg.png') center center;
 	background-size: cover;
+}
+
+.navbar {
+	transition: 0.5s;
 }
 
 // Import only what you need from Bulma

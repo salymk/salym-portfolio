@@ -1,14 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Navbar = () => {
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		window.addEventListener('scroll', () => {
+			const isTop = window.scrollY < 575;
+			console.log(window.scrollY);
+			if (isTop !== true) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		});
+
+		return function cleanup() {
+			document.removeEventListener('scroll');
+		};
+	}, []);
+
+	let navScrolled = {
+		position: 'stick',
+	};
+
 	let navItemStyle = {
 		color: 'hsl(0, 0%, 7%)',
-		fontSize: '1.1em',
+		fontSize: '1em',
 	};
+
 	return (
 		<nav
-			className='navbar is-white has-shadow'
+			className={`navbar is-white ${
+				scrolled ? 'is-fixed-top is-primary' : 'has-shadow'
+			}`}
 			role='navigation'
 			aria-label='main navigation'>
 			<div className='navbar-brand'>
@@ -23,7 +48,7 @@ const Navbar = () => {
 				</a>
 			</div>
 			<div className='navbar-menu'>
-				<div className='navbar-start is-size-4-tablet ml-6'>
+				<div className='navbar-end is-size-5-tablet ml-6'>
 					<Link
 						activeClass='active'
 						to='home'
@@ -68,7 +93,7 @@ const Navbar = () => {
 						offset={-100}
 						duration={1000}>
 						<a className='navbar-item nav-link' style={navItemStyle}>
-							<span className='nav-span'>Home</span>
+							<span className='nav-span'>Projects</span>
 						</a>
 					</Link>
 					<Link
