@@ -5,13 +5,19 @@ const Footer = () => {
 		<footer className='footer'>
 			<div className='content has-text-centered'>
 				<span className='icon mr-4'>
-					<a href='#' className='has-text-grey-darker'>
+					<a
+						href='https://github.com/salymk'
+						target='_blank'
+						className='has-text-grey-darker'>
 						<i className='fab fa-2x fa-github-square'></i>
 					</a>
 				</span>
 
 				<span className='icon'>
-					<a href='#' className='has-text-grey-darker'>
+					<a
+						href='https://www.linkedin.com/in/salym-akhmedov/'
+						target='_blank'
+						className='has-text-grey-darker'>
 						<i className='fab fa-2x fa-linkedin'></i>
 					</a>
 				</span>
