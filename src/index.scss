@@ -95,6 +95,17 @@ $navbar-height: 2.7rem;
 		margin-right: auto;
 		width: 50%;
 	}
+
+	.navbar .navbar-brand {
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+
+	.navbar .navbar-brand > .navbar-item,
+	.navbar .navbar-brand .navbar-link {
+		display: inline-block;
+	}
 }
 
 @media only screen and (max-width: 320px) {

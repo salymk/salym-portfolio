@@ -4,6 +4,13 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 const Navbar = () => {
 	const [scrolled, setScrolled] = useState(false);
 
+	const onClick = () => {
+		let toggle = document.querySelector('.navbar-burger');
+		let menu = document.querySelector('.navbar-menu');
+		toggle.classList.toggle('is-active');
+		menu.classList.toggle('is-active');
+	};
+
 	useEffect(() => {
 		window.addEventListener('scroll', () => {
 			const isTop = window.scrollY < 575;
@@ -20,10 +27,6 @@ const Navbar = () => {
 		};
 	}, []);
 
-	let navScrolled = {
-		position: 'stick',
-	};
-
 	let navItemStyle = {
 		color: 'hsl(0, 0%, 7%)',
 		fontSize: '1em',
@@ -38,6 +41,7 @@ const Navbar = () => {
 			aria-label='main navigation'>
 			<div className='navbar-brand'>
 				<a
+					onClick={onClick}
 					role='button'
 					className='navbar-burger'
 					aria-label='menu'
