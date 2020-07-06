@@ -14,7 +14,7 @@ const Projects = () => {
 			<div className='container mt-6 grid-cards grid-gap'>
 				{projectsData.map((project) => (
 					<div className='card'>
-						<div className='card-image is-128x128'>
+						<div className='card-image'>
 							<figure className='image'>
 								<img src={project.image.src} alt={project.image.alt} />
 							</figure>
@@ -33,7 +33,7 @@ const Projects = () => {
 								<a
 									href={project.github.url}
 									target='_blank'
-									className='button btn-shadow'>
+									className='button is-small'>
 									<span className='icon'>
 										<i className='fab fa-github'></i>
 									</span>
@@ -42,7 +42,7 @@ const Projects = () => {
 								<a
 									href={project.preview.url}
 									target='_blank'
-									className='button is-warning'>
+									className='button is-small is-warning'>
 									{project.preview.button}
 								</a>
 							</div>

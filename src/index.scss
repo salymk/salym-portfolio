@@ -37,7 +37,7 @@ $navbar-height: 2.7rem;
 
 .subtitle-text {
 	font-family: 'Dancing Script', cursive;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .content-size {
@@ -61,18 +61,32 @@ $navbar-height: 2.7rem;
 	color: black;
 }
 
+.card {
+	transition: all 0.5s ease; /* back to normal */
+	border: 1px solid $white;
+}
+
+.card:hover {
+	box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07),
+		1px 6px 12px rgba(39, 44, 49, 0.04);
+	transform: translate3D(0, -1px, 0) scale(1.1);
+	border: 1px solid $green;
+
+	transition: all 0.4s ease; /* zoom in */
+}
+
 // Grid for skills section
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-	grid-gap: 0.5rem;
+	grid-gap: 0.2rem;
 	align-items: flex-start;
 }
 
 .grid-cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: 3rem;
 	align-items: flex-start;
 }
 

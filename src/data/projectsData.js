@@ -1,11 +1,11 @@
 import employeeDirectoryIMG from '../images/portfolio/employee_directory.png';
 import gameShowAppIMG from '../images/portfolio/gameshow.png';
-import dashboardIMG from '../images/portfolio/dashboard2.png';
+import dashboardIMG from '../images/portfolio/dashboard3.png';
 import photoGalleryIMG from '../images/portfolio/gallery_mockup.png';
 import onlineFormIMG from '../images/portfolio/desktop-form1.png';
-import responsiveDesignIMG from '../images/portfolio/responsive-design1.png';
+import responsiveDesignIMG from '../images/portfolio/responsive-design2.png';
 import blogSiteIMG from '../images/portfolio/blog-site.png';
-import weatherJournalIMG from '../images/portfolio/weather-journal2.png';
+import weatherJournalIMG from '../images/portfolio/weather-journal3.png';
 
 export default [
 	{
@@ -48,7 +48,7 @@ export default [
 		title: 'Web App Dashboard',
 		skills: 'HTML / CSS / JS / SVG Graphics',
 		description:
-			'Built an interactive dashboard for a web application using advanced web techniques including SVG graphics. The project involved creating tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.',
+			'Built an interactive dashboard for a web app using SVG graphics. The project involved creating tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.',
 		github: {
 			url: 'https://github.com/salymk/webapp-dashboard',
 			button: 'GitHub',
