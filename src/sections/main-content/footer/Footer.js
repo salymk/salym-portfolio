@@ -8,8 +8,8 @@ const Footer = () => {
 					<a
 						href='https://github.com/salymk'
 						target='_blank'
-						className='has-text-grey-darker'>
-						<i className='fab fa-2x fa-github-square'></i>
+						className='has-text-grey-darker social-hover'>
+						<i class='fab fa-2x fa-github-square'></i>
 					</a>
 				</span>
 
