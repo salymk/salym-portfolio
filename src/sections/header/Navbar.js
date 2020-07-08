@@ -89,7 +89,7 @@ const Navbar = () => {
 						offset={-100}
 						duration={1000}>
 						<a onClick={onClick} className='navbar-item nav-link'>
-							<span className='nav-span'>Projects</span>
+							<span className='nav-span'>Portfolio</span>
 						</a>
 					</Link>
 					<Link

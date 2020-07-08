@@ -5,11 +5,11 @@ import employeeDirectoryIMG from '../../../images/portfolio/employee_directory.p
 
 const Projects = () => {
 	return (
-		<div className='section pt-0'>
+		<div className='section'>
 			<h1
-				className='title is-1 has-text-centered mt-6 mb-6 is-uppercase'
+				className='title is-2 has-text-centered mt-6 mb-6 is-uppercase'
 				id='projects'>
-				Projects
+				Portfolio
 			</h1>
 			<div className='container mt-6 grid-cards grid-gap'>
 				{projectsData.map((project) => (
