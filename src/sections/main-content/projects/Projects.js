@@ -8,7 +8,7 @@ const Projects = () => {
 		<div className='section'>
 			<h1
 				className='title is-2 has-text-centered mt-6 mb-6 is-uppercase'
-				id='projects'>
+				id='portfolio'>
 				Portfolio
 			</h1>
 			<div className='container mt-6 grid-cards grid-gap'>
