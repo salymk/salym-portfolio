@@ -5,7 +5,7 @@ import employeeDirectoryIMG from '../../../images/portfolio/employee_directory.p
 
 const Projects = () => {
 	return (
-		<div className='section'>
+		<div className='section has-background-white-bis'>
 			<h1
 				className='title is-2 has-text-centered mt-6 mb-6 is-uppercase'
 				id='portfolio'>
