@@ -1,9 +1,6 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,500,700');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 /* ============================================= */
 /*              Bulma customization              */
@@ -22,8 +19,17 @@ $radius: 5px;
 /*              Base Styles                      */
 /* ============================================= */
 
-.section .title {
-	font-family: 'Roboto', sans-serif;
+.text-size {
+	font-size: 1.15em;
+}
+
+.subtitle-text {
+	font-family: 'Dancing Script', cursive;
+	font-size: 12px;
+}
+
+.content-size {
+	font-size: 14px;
 }
 
 /* ============================================= */
