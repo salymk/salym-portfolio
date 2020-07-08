@@ -27,14 +27,11 @@ const Navbar = () => {
 		};
 	}, []);
 
-	let navItemStyle = {
-		color: 'hsl(0, 0%, 7%)',
-		fontSize: '1em',
-	};
-
 	return (
 		<nav
-			className={`navbar is-white ${scrolled ? 'is-fixed-top' : 'has-shadow'}`}
+			className={`navbar is-white ${
+				scrolled ? 'is-fixed-top is-primary' : 'has-shadow'
+			}`}
 			role='navigation'
 			aria-label='main navigation'>
 			<div className='navbar-brand'>
