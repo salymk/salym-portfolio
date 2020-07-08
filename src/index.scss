@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+
 // Import a Google Font
 
 /* ============================================= */
@@ -46,30 +48,45 @@ $radius: 5px;
 /* ============================================= */
 
 $navbar-height: 2.89rem;
+$navbar-item-color: hsl(0, 0%, 7%);
+$navbar-item-hover-color: hsl(171, 100%, 41%);
 
 .navbar {
 	transition: 0.5s;
 }
 
-.nav-link {
-	font-size: 1em;
-	font-weight: 700;
-	.nav-span {
-		color: hsl(0, 0%, 7%);
-	}
-	&:hover {
-		.nav-span {
-			color: hsl(171, 100%, 41%);
-		}
-	}
+.bg-color:hover {
+	background-color: hsl(0, 0%, 98%);
 }
+
+.nav-logo {
+	font-size: 1.3em;
+	font-weight: bolder;
+}
+
+.nav-link {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+// .nav-link {
+// 	font-size: 0.8em;
+// 	font-weight: 700;
+// 	.nav-span {
+// 		color: hsl(0, 0%, 7%);
+// 	}
+// 	&:hover {
+// 		.nav-span {
+// 			color: hsl(171, 100%, 41%);
+// 		}
+// 	}
+// }
 
 /* ============================================= */
 /*              Responsive styles                */
 /* ============================================= */
 
 // Import only what you need from Bulma
-@import '../node_modules/bulma/sass/utilities/_all.sass';
 @import '../node_modules/bulma/sass/base/_all.sass';
 @import '../node_modules/bulma/sass/elements/button.sass';
 @import '../node_modules/bulma/sass/elements/container.sass';

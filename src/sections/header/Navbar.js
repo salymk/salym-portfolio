@@ -14,7 +14,6 @@ const Navbar = () => {
 	useEffect(() => {
 		window.addEventListener('scroll', () => {
 			const isTop = window.scrollY < 575;
-			console.log(window.scrollY);
 			if (isTop !== true) {
 				setScrolled(true);
 			} else {
@@ -34,7 +33,19 @@ const Navbar = () => {
 			}`}
 			role='navigation'
 			aria-label='main navigation'>
-			<div className='navbar-brand'>
+			<div className='navbar-brand bg-color'>
+				<Link
+					activeClass='active'
+					to='home'
+					spy={true}
+					smooth={true}
+					offset={-100}
+					duration={1000}>
+					<a onClick={onClick} className='navbar-item'>
+						<span className='nav-span nav-logo'>Salym Akhmedov</span>
+					</a>
+				</Link>
+
 				<a
 					onClick={onClick}
 					role='button'
@@ -47,19 +58,7 @@ const Navbar = () => {
 				</a>
 			</div>
 			<div className='navbar-menu'>
-				<div className='navbar-end is-size-5-tablet ml-6'>
-					<Link
-						activeClass='active'
-						to='home'
-						spy={true}
-						smooth={true}
-						offset={-100}
-						duration={1000}>
-						<a onClick={onClick} className='navbar-item nav-link'>
-							<span className='nav-span'>Home</span>
-						</a>
-					</Link>
-
+				<div className='navbar-start is-size-5-tablet'>
 					<Link
 						activeClass='active'
 						to='about'
