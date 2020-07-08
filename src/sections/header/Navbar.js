@@ -13,7 +13,7 @@ const Navbar = () => {
 
 	useEffect(() => {
 		window.addEventListener('scroll', () => {
-			const isTop = window.scrollY < 575;
+			const isTop = window.scrollY < 560;
 			if (isTop !== true) {
 				setScrolled(true);
 			} else {

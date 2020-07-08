@@ -5,28 +5,17 @@
 // Import a Google Font
 
 /* ============================================= */
-/*              Bulma customization              */
-/* ============================================= */
-
-// Set your brand colors
-
-//Initial variables
-$radius: 5px;
-
-// Update Bulma's global variables
-
-// Update some of Bulma's component variables
-
-/* ============================================= */
 /*              Base Styles                      */
 /* ============================================= */
+
+$radius: 5px;
 
 .text-size {
 	font-size: 1.15em;
 }
 
 .subtitle-text {
-	font-family: 'Dancing Script', cursive;
+	// font-family: 'Dancing Script', cursive;
 	font-size: 12px;
 }
 
@@ -51,6 +40,7 @@ $navbar-item-color: hsl(0, 0%, 7%);
 $navbar-item-hover-color: hsl(171, 100%, 41%);
 $navbar-box-shadow-color: hsl(171, 100%, 41%);
 $navbar-box-shadow-size: 0 3px 0 0;
+$navbar-height: 2.8rem;
 
 .navbar {
 	transition: 0.8s;
@@ -81,19 +71,6 @@ $navbar-box-shadow-size: 0 3px 0 0;
 		color: hsl(171, 100%, 41%);
 	}
 }
-
-// .nav-link {
-// 	font-size: 0.8em;
-// 	font-weight: 700;
-// 	.nav-span {
-// 		color: hsl(0, 0%, 7%);
-// 	}
-// 	&:hover {
-// 		.nav-span {
-// 			color: hsl(171, 100%, 41%);
-// 		}
-// 	}
-// }
 
 /* ============================================= */
 /*              Responsive styles                */
