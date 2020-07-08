@@ -1,16 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './../node_modules/bulma/css/bulma.css';
-import './index.scss'
+import './index.scss';
 
+import App from './App';
 
-import App from "./App";
-
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  rootElement
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>,
+	rootElement,
 );
-
