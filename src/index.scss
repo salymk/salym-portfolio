@@ -47,12 +47,13 @@ $radius: 5px;
 /*              Navbar component                   */
 /* ============================================= */
 
-// $navbar-height: 2.8rem;
 $navbar-item-color: hsl(0, 0%, 7%);
 $navbar-item-hover-color: hsl(171, 100%, 41%);
+$navbar-box-shadow-color: hsl(171, 100%, 41%);
+$navbar-box-shadow-size: 0 3px 0 0;
 
 .navbar {
-	transition: 0.5s;
+	transition: 0.8s;
 }
 
 .bg-color:hover {
