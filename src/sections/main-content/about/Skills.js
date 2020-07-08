@@ -9,7 +9,7 @@ const Skills = () => {
 				Tools
 			</h1>
 
-			<div className='container grid'>
+			<div className='container grid mb-6'>
 				{icons.map((i) => (
 					<div className='has-text-centered'>
 						<p className='subtitle is-4 mt-6'>{i.name}</p>
@@ -19,7 +19,7 @@ const Skills = () => {
 					</div>
 				))}
 
-				<div className='has-text-centered my-0 mx-0'>
+				<div className='has-text-centered'>
 					<p className='subtitle is-4 mt-6'>Bulma CSS</p>
 					<img className='bulma-logo' src={BulmaLogo} alt='Bulma CSS logo' />
 				</div>
