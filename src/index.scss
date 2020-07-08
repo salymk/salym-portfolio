@@ -2,14 +2,42 @@
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
-/* 1. Base styles */
+/* ============================================= */
+/*              Bulma customization              */
+/* ============================================= */
 
-/* 2. Shared styles */
+// Set your brand colors
 
-/* 3. Specific styles */
+//Initial variables
+$radius: 5px;
 
-/* 4. Responsive styles */
+// Update Bulma's global variables
+
+// Update some of Bulma's component variables
+
+/* ============================================= */
+/*              Base Styles                      */
+/* ============================================= */
+
+.section .title {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* ============================================= */
+/*              Hero component                   */
+/* ============================================= */
+
+.has-bg-img {
+	background: url('../src/images/hero-bg.png') center center;
+	background-size: cover;
+}
+
+/* ============================================= */
+/*              Responsive styles                */
+/* ============================================= */
 
 // Import only what you need from Bulma
 @import '../node_modules/bulma/sass/utilities/_all.sass';
