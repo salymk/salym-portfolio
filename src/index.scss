@@ -73,8 +73,34 @@ $navbar-height: 2.8rem;
 }
 
 /* ============================================= */
+/*              About styles                     */
+/* ============================================= */
+
+.custom-img {
+	border-radius: 1rem;
+	-webkit-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ============================================= */
 /*              Responsive styles                */
 /* ============================================= */
+
+@media only screen and (max-width: 768px) {
+	.custom-img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.custom-img {
+		width: 100%;
+	}
+}
 
 // Import only what you need from Bulma
 @import '../node_modules/bulma/sass/base/_all.sass';
