@@ -47,7 +47,7 @@ $radius: 5px;
 /*              Navbar component                   */
 /* ============================================= */
 
-$navbar-height: 2.89rem;
+// $navbar-height: 2.8rem;
 $navbar-item-color: hsl(0, 0%, 7%);
 $navbar-item-hover-color: hsl(171, 100%, 41%);
 
@@ -60,13 +60,25 @@ $navbar-item-hover-color: hsl(171, 100%, 41%);
 }
 
 .nav-logo {
-	font-size: 1.3em;
-	font-weight: bolder;
+	font-size: 1.2rem;
+	font-weight: 400;
 }
 
 .nav-link {
-	font-size: 1.3rem;
-	font-weight: 600;
+	font-weight: lighter;
+}
+
+.fa-github-square {
+	transition: 0.1s;
+	&:hover {
+		color: hsl(171, 100%, 41%);
+	}
+}
+.fa-linkedin {
+	transition: 0.1s;
+	&:hover {
+		color: hsl(171, 100%, 41%);
+	}
 }
 
 // .nav-link {

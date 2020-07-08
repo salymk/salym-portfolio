@@ -28,9 +28,7 @@ const Navbar = () => {
 
 	return (
 		<nav
-			className={`navbar is-white ${
-				scrolled ? 'is-fixed-top is-primary' : 'has-shadow'
-			}`}
+			className={`navbar is-white ${scrolled ? 'is-fixed-top has-shadow' : ''}`}
 			role='navigation'
 			aria-label='main navigation'>
 			<div className='navbar-brand bg-color'>
@@ -105,6 +103,25 @@ const Navbar = () => {
 							<span className='nav-span'>Contact</span>
 						</a>
 					</Link>
+				</div>
+				<div className='navbar-end'>
+					<div className='navbar-item'>
+						<div className='field is-grouped'>
+							<a
+								href='https://github.com/salymk'
+								target='_blank'
+								className='has-text-grey-darker mr-3'>
+								<i class='fab fa-2x fa-github-square'></i>
+							</a>
+
+							<a
+								href='https://www.linkedin.com/in/salym-akhmedov/'
+								target='_blank'
+								className='has-text-grey-darker'>
+								<i className='fab fa-2x fa-linkedin'></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</nav>
