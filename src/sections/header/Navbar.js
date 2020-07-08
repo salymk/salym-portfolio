@@ -58,10 +58,7 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a
-							onClick={onClick}
-							className='navbar-item nav-link'
-							style={navItemStyle}>
+						<a onClick={onClick} className='navbar-item nav-link'>
 							<span className='nav-span'>Home</span>
 						</a>
 					</Link>
@@ -73,10 +70,7 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a
-							onClick={onClick}
-							className='navbar-item nav-link'
-							style={navItemStyle}>
+						<a onClick={onClick} className='navbar-item nav-link'>
 							<span className='nav-span'>About</span>
 						</a>
 					</Link>
@@ -88,10 +82,7 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a
-							onClick={onClick}
-							className='navbar-item nav-link'
-							style={navItemStyle}>
+						<a onClick={onClick} className='navbar-item nav-link'>
 							<span className='nav-span'>Tools</span>
 						</a>
 					</Link>
@@ -103,10 +94,7 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a
-							onClick={onClick}
-							className='navbar-item nav-link'
-							style={navItemStyle}>
+						<a onClick={onClick} className='navbar-item nav-link'>
 							<span className='nav-span'>Projects</span>
 						</a>
 					</Link>
@@ -117,10 +105,7 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a
-							onClick={onClick}
-							className='navbar-item nav-link'
-							style={navItemStyle}>
+						<a onClick={onClick} className='navbar-item nav-link'>
 							<span className='nav-span'>Contact</span>
 						</a>
 					</Link>
