@@ -105,7 +105,7 @@ const Navbar = () => {
 					</Link>
 				</div>
 				<div className='navbar-end'>
-					<div className='navbar-item'>
+					<div className='navbar-item mr-6'>
 						<div className='field is-grouped'>
 							<a
 								href='https://github.com/salymk'

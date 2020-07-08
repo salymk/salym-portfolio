@@ -46,6 +46,10 @@ $navbar-height: 2.8rem;
 	transition: 0.8s;
 }
 
+.navbar-brand {
+	margin-left: 3rem;
+}
+
 .bg-color:hover {
 	background-color: hsl(0, 0%, 98%);
 }
@@ -102,6 +106,10 @@ $navbar-height: 2.8rem;
 		margin-left: auto;
 		margin-right: auto;
 		width: 50%;
+	}
+
+	.navbar-brand {
+		margin-left: 0rem;
 	}
 }
 
