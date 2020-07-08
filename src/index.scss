@@ -41,9 +41,9 @@ $radius: 5px;
 /*              Navbar component                   */
 /* ============================================= */
 
-$navbar-item-color: hsl(0, 0%, 7%);
-$navbar-item-hover-color: hsl(171, 100%, 41%);
-$navbar-box-shadow-color: hsl(171, 100%, 41%);
+$navbar-item-color: $black-bis;
+$navbar-item-hover-color: $primary;
+$navbar-box-shadow-color: $primary;
 $navbar-box-shadow-size: 0 3px 0 0;
 $navbar-height: 2.8rem;
 
@@ -56,7 +56,7 @@ $navbar-height: 2.8rem;
 }
 
 .bg-color:hover {
-	background-color: hsl(0, 0%, 98%);
+	background-color: $white;
 }
 
 .nav-logo {
@@ -71,13 +71,13 @@ $navbar-height: 2.8rem;
 .fa-github-square {
 	transition: 0.1s;
 	&:hover {
-		color: hsl(171, 100%, 41%);
+		color: $primary;
 	}
 }
 .fa-linkedin {
 	transition: 0.1s;
 	&:hover {
-		color: hsl(171, 100%, 41%);
+		color: $primary;
 	}
 }
 
@@ -168,7 +168,7 @@ $navbar-height: 2.8rem;
 
 .card {
 	transition: all 0.5s ease; /* back to normal */
-	border: 1px solid white;
+	border: 1px solid $white;
 	border-radius: 4px;
 }
 
@@ -179,6 +179,21 @@ $navbar-height: 2.8rem;
 	border: 1px solid $primary;
 
 	transition: all 0.4s ease; /* zoom in */
+}
+
+.ct-btn {
+	border: 1px solid $white;
+	transition: all 0.5s ease;
+	font-size: 14px;
+
+	&:hover {
+		box-shadow: 8px 28px 50px rgba(39, 44, 49, 0.07),
+			1px 6px 12px rgba(39, 44, 49, 0.04);
+		transform: translate3D(0, -1px, 0) scale(1.04);
+		border: 1px solid $white;
+
+		transition: all 0.4s ease; /* zoom in */
+	}
 }
 
 /* ============================================= */

@@ -33,7 +33,7 @@ const Projects = () => {
 								<a
 									href={project.github.url}
 									target='_blank'
-									className='button is-small'>
+									className='button ct-btn'>
 									<span className='icon'>
 										<i className='fab fa-github'></i>
 									</span>
@@ -42,7 +42,7 @@ const Projects = () => {
 								<a
 									href={project.preview.url}
 									target='_blank'
-									className='button is-small is-warning'>
+									className='button ct-btn  is-warning'>
 									{project.preview.button}
 								</a>
 							</div>
