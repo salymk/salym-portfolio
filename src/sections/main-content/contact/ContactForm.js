@@ -24,7 +24,9 @@ const ContactForm = () => {
 				</div>
 				<div className='field'>
 					<div className='control'>
-						<button className='button is-primary is-fullwidth' type='submit'>
+						<button
+							className='button is-medium is-primary is-fullwidth ct-btn'
+							type='submit'>
 							Submit
 						</button>
 					</div>
