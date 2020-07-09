@@ -215,10 +215,12 @@ $navbar-height: 2.8rem;
 
 input.input:focus {
 	border: 1px solid $primary;
+	box-shadow: 0 0 0 0;
 }
 
 textarea.textarea:focus {
 	border: 1px solid $primary;
+	box-shadow: 0 0 0 0;
 }
 
 .fa-phone {
