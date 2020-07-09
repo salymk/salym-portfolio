@@ -27,7 +27,7 @@ const Projects = () => {
 									{project.skills}
 								</p>
 							</div>
-							<div className='content content-size'>{project.description}</div>
+							{/*<div className='content content-size'>{project.description}</div>*/}
 
 							<div className='buttons'>
 								<a
@@ -42,7 +42,7 @@ const Projects = () => {
 								<a
 									href={project.preview.url}
 									target='_blank'
-									className='button ct-btn  is-warning'>
+									className='button ct-btn is-warning'>
 									{project.preview.button}
 								</a>
 							</div>
