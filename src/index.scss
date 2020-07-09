@@ -197,6 +197,15 @@ $navbar-height: 2.8rem;
 }
 
 /* ============================================= */
+/*              Contact styles                */
+/* ============================================= */
+
+.fa-phone {
+	-ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)';
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+/* ============================================= */
 /*              Responsive styles                */
 /* ============================================= */
 

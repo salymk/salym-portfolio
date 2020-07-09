@@ -1,50 +1,20 @@
 import React from 'react';
+import ContactInfo from './ContactInfo';
+import ContactForm from './ContactForm';
 
 const Contact = () => {
 	return (
-		<div className='section has-background-primary'>
-			<div className='container'>
+		<section className='section'>
+			<div className='container py-4'>
+				<h2 className='title is-2 has-text-centered mb-6' id='contact'>
+					Contact
+				</h2>
 				<div className='columns'>
-					<div className='column'>
-						<h1
-							className='title is-2 is-uppercase has-text-white has-text-centered'
-							id='contact'>
-							Contact
-						</h1>
-						<h2 className='subtitle has-text-white has-text-centered'>
-							Have questions or want to work together?
-						</h2>
-					</div>
-				</div>
-				<div className='columns is-centered'>
-					<div className='column is-half'>
-						<div className='field'>
-							<div className='control'>
-								<input className='input' type='text' placeholder='Name' />
-							</div>
-						</div>
-
-						<div className='field'>
-							<div className='control'>
-								<input className='input' type='email' placeholder='Email' />
-							</div>
-						</div>
-
-						<div className='field'>
-							<div className='control'>
-								<textarea className='textarea' placeholder='Message'></textarea>
-							</div>
-						</div>
-
-						<div className='control'>
-							<button className='button is-primary is-inverted is-medium'>
-								Submit
-							</button>
-						</div>
-					</div>
+					<ContactInfo />
+					<ContactForm />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
