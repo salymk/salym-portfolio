@@ -210,8 +210,16 @@ $navbar-height: 2.8rem;
 }
 
 /* ============================================= */
-/*              Contact styles                */
+/*              Contact styles                  */
 /* ============================================= */
+
+input.input:focus {
+	border: 1px solid $primary;
+}
+
+textarea.textarea:focus {
+	border: 1px solid $primary;
+}
 
 .fa-phone {
 	-ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)';
