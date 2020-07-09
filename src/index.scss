@@ -52,6 +52,10 @@ $navbar-box-shadow-color: $primary;
 $navbar-box-shadow-size: 0 3px 0 0;
 $navbar-height: 2.8rem;
 
+.active {
+	background-color: hsl(0, 0%, 98%);
+}
+
 .navbar {
 	transition: 0.8s;
 }
