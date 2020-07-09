@@ -205,6 +205,21 @@ $navbar-height: 2.8rem;
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
 }
+
+.footer-title {
+	&:hover {
+		color: $primary;
+	}
+}
+
+.footer-link {
+	color: hsl(0, 0%, 21%);
+	margin-right: 12px;
+
+	&:hover {
+		color: $primary;
+	}
+}
 /* ============================================= */
 /*              Responsive styles                */
 /* ============================================= */

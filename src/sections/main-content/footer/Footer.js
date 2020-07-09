@@ -1,30 +1,81 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
+	const onClick = () => {
+		let toggle = document.querySelector('.navbar-burger');
+		let menu = document.querySelector('.navbar-menu');
+		toggle.classList.toggle('is-active');
+		menu.classList.toggle('is-active');
+	};
+
 	return (
 		<footer className='footer'>
 			<div className='container'>
 				<div className='level'>
 					<div className='level-left'>
 						<div className='level-item'>
-							<a className='title is-4' href='#'>
-								Salym Akhmedov
-							</a>
+							<Link
+								activeClass='active'
+								to='home'
+								spy={true}
+								smooth={true}
+								offset={-100}
+								duration={1000}>
+								<a onClick={onClick} className='title is-4 footer-title'>
+									Salym Akhmedov
+								</a>
+							</Link>
 						</div>
 					</div>
 					<div className='level-right'>
-						<a className='level-item' href='#'>
-							About
-						</a>
-						<a className='level-item' href='#'>
-							Portfolio
-						</a>
-						<a className='level-item' href='#'>
-							Tools
-						</a>
-						<a className='level-item' href='#'>
-							Contact
-						</a>
+						<Link
+							activeClass='active'
+							to='about'
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={1000}>
+							<a onClick={onClick} className='footer-link'>
+								About
+							</a>
+						</Link>
+
+						<Link
+							activeClass='active'
+							to='portfolio'
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={1000}>
+							<a onClick={onClick} className='footer-link'>
+								Portfolio
+							</a>
+						</Link>
+
+						<Link
+							activeClass='active'
+							to='tools'
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={1000}>
+							<a onClick={onClick} className='footer-link'>
+								Tools
+							</a>
+						</Link>
+
+						<Link
+							activeClass='active'
+							to='contact'
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={1000}>
+							<a onClick={onClick} className='footer-link'>
+								Contact
+							</a>
+						</Link>
 					</div>
 				</div>
 				<hr />
