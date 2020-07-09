@@ -24,7 +24,9 @@ const ContactInfo = () => {
 					</div>
 					<div className='media-content'>
 						<div className='content'>
-							<a href='tel:720-226-1054'>720-226-1054</a>
+							<a href='tel:720-226-1054' className='link-hover'>
+								720-226-1054
+							</a>
 						</div>
 					</div>
 				</div>
@@ -34,7 +36,9 @@ const ContactInfo = () => {
 					</div>
 					<div className='media-content'>
 						<div className='content'>
-							<a href='mailto:khokumdarakhmedov@gmail.com'>
+							<a
+								href='mailto:khokumdarakhmedov@gmail.com'
+								className='link-hover'>
 								khokumdarakhmedov@gmail.com
 							</a>
 						</div>

@@ -32,7 +32,7 @@ const AboutMe = () => {
 								offset={-100}
 								duration={1000}>
 								{' '}
-								<span className='custom-link'>
+								<span className='custom-link link-hover'>
 									Let's create something great together!
 								</span>
 							</Link>
