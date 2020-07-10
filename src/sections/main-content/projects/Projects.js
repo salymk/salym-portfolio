@@ -31,8 +31,9 @@ const Projects = () => {
 									{project.skills}
 								</p>
 							</div>
-							{/*<div className='content content-size'>{project.description}</div>*/}
-							<button onClick={onClick} className='button is-warning ct-btn'>
+							<button
+								onClick={onClick}
+								className='button is-warning is-fullwidth ct-btn'>
 								Learn more
 							</button>
 						</div>
