@@ -39,12 +39,12 @@ const Projects = () => {
 							</div>
 						</div>
 						<Modal
-							title='Employee Directory'
-							youtube='https://www.youtube.com/embed/myS31QFXorY?rel=0&mute=1'
-							skills='HTML / CSS / JS'
-							description='Utilized Random User API to grab employee data. You can search for the employees with their names and you click on each employee and it opens up a modal with contact info of employee.'
-							githubLink='https://github.com/salymk/employee-directory'
-							previewLink='https://salymk.github.io/employee-directory/'
+							title={project.title}
+							youtubeLink={project.youtubeUrl}
+							skills={project.skills}
+							description={project.description}
+							githubLink={project.github.url}
+							previewLink={project.preview.url}
 						/>
 					</>
 				))}
@@ -54,3 +54,25 @@ const Projects = () => {
 };
 
 export default Projects;
+
+// <div className='card'>
+// 	<div className='card-image'>
+// 		<figure className='image'>
+// 			<img src={project.image.src} alt={project.image.alt} />
+// 		</figure>
+// 	</div>
+
+// 	<div className='card-content pt-4'>
+// 		<div className='content mb-2'>
+// 			<h1 className='title is-5 mb-2'>{project.title}</h1>
+// 			<p className='subtitle-text has-text-primary'>
+// 				{project.skills}
+// 			</p>
+// 		</div>
+// 		<button
+// 			onClick={onClick}
+// 			className='button is-warning is-fullwidth ct-btn'>
+// 			Learn more
+// 		</button>
+// 	</div>
+// </div>;
