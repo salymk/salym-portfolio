@@ -25,6 +25,7 @@ export default [
 			src: employeeDirectoryIMG,
 			alt: 'Employee directory',
 		},
+		youtube: 'https://www.youtube.com/embed/myS31QFXorY?rel=0&mute=1',
 	},
 	{
 		title: 'Game Show App',
@@ -43,6 +44,7 @@ export default [
 			src: gameShowAppIMG,
 			alt: 'Game show app',
 		},
+		youtube: 'https://www.youtube.com/embed/CKXwgu_RREo?rel=0',
 	},
 	{
 		title: 'Web App Dashboard',
@@ -61,6 +63,7 @@ export default [
 			src: dashboardIMG,
 			alt: 'Web App Dashboard',
 		},
+		youtube: 'https://www.youtube.com/embed/_OomMBaIAg8',
 	},
 	{
 		title: 'Interactive Photo Gallery',
@@ -79,6 +82,7 @@ export default [
 			src: photoGalleryIMG,
 			alt: 'Interactive photo gallery',
 		},
+		youtube: 'https://www.youtube.com/embed/lpopl2mr-0I?rel=0',
 	},
 	{
 		title: 'Weather Journal Web App',
@@ -115,6 +119,7 @@ export default [
 			src: onlineFormIMG,
 			alt: 'Online Registration Form',
 		},
+		youtube: 'https://www.youtube.com/embed/xRp-uBVT1TQ?rel=0',
 	},
 	{
 		title: 'Mobile-first Responsive Layout',
@@ -133,6 +138,7 @@ export default [
 			src: responsiveDesignIMG,
 			alt: 'Mobile-first Responsive Layout',
 		},
+		youtube: 'https://www.youtube.com/embed/Z7zacqTy-vQ?rel=0',
 	},
 	{
 		title: 'Personal Blog',
