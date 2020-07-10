@@ -29,7 +29,7 @@ const Projects = () => {
 
 						<Modal
 							title={project.title}
-							youtubeLink={project.youtubeUrl}
+							youtube={project.youtube}
 							skills={project.skills}
 							description={project.description}
 							githubLink={project.github.url}

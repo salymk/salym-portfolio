@@ -25,7 +25,7 @@ export default [
 			src: employeeDirectoryIMG,
 			alt: 'Employee directory',
 		},
-		youtubeUrl: 'https://www.youtube.com/embed/myS31QFXorY?rel=0&mute=1',
+		youtube: 'https://www.youtube.com/embed/myS31QFXorY?rel=0&mute=1',
 	},
 	{
 		title: 'Game Show App',

@@ -23,7 +23,7 @@ const Modal = (props) => {
 					<iframe
 						width='360'
 						height='215'
-						src={props.youtubeLink}
+						src={props.youtube}
 						frameborder='0'
 						title='Project video'
 						allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
