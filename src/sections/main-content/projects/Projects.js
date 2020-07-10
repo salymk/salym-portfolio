@@ -4,6 +4,10 @@ import projectsData from '../../../data/projectsData';
 import employeeDirectoryIMG from '../../../images/portfolio/employee_directory.png';
 
 const Projects = () => {
+	const onClick = () => {
+		let modal = document.querySelector('.modal');
+		modal.classList.toggle('is-active');
+	};
 	return (
 		<div className='section has-background-white-bis'>
 			<h1
@@ -28,24 +32,9 @@ const Projects = () => {
 								</p>
 							</div>
 							{/*<div className='content content-size'>{project.description}</div>*/}
-
-							<div className='buttons'>
-								<a
-									href={project.github.url}
-									target='_blank'
-									className='button ct-btn'>
-									<span className='icon'>
-										<i className='fab fa-github'></i>
-									</span>
-									<span>{project.github.button}</span>
-								</a>
-								<a
-									href={project.preview.url}
-									target='_blank'
-									className='button ct-btn is-warning'>
-									{project.preview.button}
-								</a>
-							</div>
+							<button onClick={onClick} className='button is-warning ct-btn'>
+								Learn more
+							</button>
 						</div>
 					</div>
 				))}
