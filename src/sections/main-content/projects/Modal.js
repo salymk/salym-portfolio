@@ -7,7 +7,7 @@ const Modal = (props) => {
 	};
 
 	return (
-		<div className='modal'>
+		<div className='modal has-text-centered'>
 			<div className='modal-background' />
 			<div className='modal-card'>
 				<header className='modal-card-head'>
@@ -52,7 +52,7 @@ const Modal = (props) => {
 							className='button ct-btn is-warning'>
 							{props.previewLink ? 'Live Preview' : 'No Preview'}
 						</a>
-						<button onClick={onClick} className='button ctn-btn is-danger'>
+						<button onClick={onClick} className='button ct-btn is-danger'>
 							Close
 						</button>
 					</div>
