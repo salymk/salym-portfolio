@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from './Modal';
+import Card from './Card';
 import projectsData from '../../../data/projectsData';
 
 const Projects = () => {
@@ -7,6 +8,7 @@ const Projects = () => {
 		let modal = document.querySelector('.modal');
 		modal.classList.toggle('is-active');
 	};
+
 	return (
 		<div className='section has-background-white-bis'>
 			<h1
@@ -17,27 +19,14 @@ const Projects = () => {
 			<div className='container mt-6 grid-cards grid-gap'>
 				{projectsData.map((project) => (
 					<>
-						<div className='card'>
-							<div className='card-image'>
-								<figure className='image'>
-									<img src={project.image.src} alt={project.image.alt} />
-								</figure>
-							</div>
+						<Card
+							imageUrl={project.image.src}
+							imageAlt={project.image.alt}
+							title={project.title}
+							skills={project.skills}
+							onClick={onClick}
+						/>
 
-							<div className='card-content pt-4'>
-								<div className='content mb-2'>
-									<h1 className='title is-5 mb-2'>{project.title}</h1>
-									<p className='subtitle-text has-text-primary'>
-										{project.skills}
-									</p>
-								</div>
-								<button
-									onClick={onClick}
-									className='button is-warning is-fullwidth ct-btn'>
-									Learn more
-								</button>
-							</div>
-						</div>
 						<Modal
 							title={project.title}
 							youtubeLink={project.youtubeUrl}

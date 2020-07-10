@@ -52,7 +52,7 @@ const Modal = (props) => {
 							className='button ct-btn is-warning'>
 							{props.previewLink ? 'Live Preview' : 'No Preview'}
 						</a>
-						<button onClick={onClick} className='button is-danger'>
+						<button onClick={onClick} className='button ctn-btn is-danger'>
 							Close
 						</button>
 					</div>
