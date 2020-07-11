@@ -21,12 +21,12 @@ const Hero = () => {
 						smooth={true}
 						offset={-100}
 						duration={500}>
-						<a className='button is-white is-outlined is-size-5-tablet'>
+						<span className='button is-white is-outlined is-size-5-tablet'>
 							<span>Find out more</span>
 							<span className='icon is-small'>
 								<i className='fas fa-arrow-down'></i>
 							</span>
-						</a>
+						</span>
 					</Link>
 				</div>
 			</div>

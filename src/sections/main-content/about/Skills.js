@@ -11,7 +11,7 @@ const Skills = () => {
 
 			<div className='container grid mb-6'>
 				{icons.map((i) => (
-					<div className='has-text-centered'>
+					<div className='has-text-centered' key={i.id}>
 						<p className='subtitle is-4 mt-6'>{i.name}</p>
 						<span className='icon mt-5'>
 							<i className={i.icon}></i>

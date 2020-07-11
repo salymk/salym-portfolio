@@ -39,9 +39,9 @@ const Navbar = () => {
 					smooth={true}
 					offset={-100}
 					duration={1000}>
-					<a onClick={onClick} className='navbar-item'>
+					<span onClick={onClick} className='navbar-item'>
 						<span className='nav-span nav-logo'>Salym Akhmedov</span>
-					</a>
+					</span>
 				</Link>
 
 				<a
@@ -64,9 +64,9 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a onClick={onClick} className='navbar-item nav-link'>
+						<span onClick={onClick} className='navbar-item nav-link'>
 							<span className='nav-span'>About</span>
-						</a>
+						</span>
 					</Link>
 
 					<Link
@@ -76,9 +76,9 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a onClick={onClick} className='navbar-item nav-link'>
+						<span onClick={onClick} className='navbar-item nav-link'>
 							<span className='nav-span'>Portfolio</span>
-						</a>
+						</span>
 					</Link>
 
 					<Link
@@ -88,9 +88,9 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a onClick={onClick} className='navbar-item nav-link'>
+						<span onClick={onClick} className='navbar-item nav-link'>
 							<span className='nav-span'>Tools</span>
-						</a>
+						</span>
 					</Link>
 
 					<Link
@@ -100,9 +100,9 @@ const Navbar = () => {
 						smooth={true}
 						offset={-100}
 						duration={1000}>
-						<a onClick={onClick} className='navbar-item nav-link'>
+						<span onClick={onClick} className='navbar-item nav-link'>
 							<span className='nav-span'>Contact</span>
-						</a>
+						</span>
 					</Link>
 				</div>
 				<div className='navbar-end'>
@@ -112,7 +112,7 @@ const Navbar = () => {
 								href='https://github.com/salymk'
 								target='_blank'
 								className='has-text-grey-darker mr-3'>
-								<i class='fab fa-2x fa-github-square'></i>
+								<i className='fab fa-2x fa-github-square'></i>
 							</a>
 
 							<a

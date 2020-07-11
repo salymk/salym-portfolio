@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState, Fragment } from 'react';
 import Modal from './Modal';
 import Card from './Card';
 import projectsData from '../../../data/projectsData';
 
 const Projects = () => {
+	const [projects, setProjects] = useState(projectsData);
+
 	const onClick = () => {
 		let modal = document.querySelector('.modal');
 		modal.classList.toggle('is-active');
@@ -17,8 +19,8 @@ const Projects = () => {
 				Portfolio
 			</h1>
 			<div className='container mt-6 grid-cards grid-gap'>
-				{projectsData.map((project) => (
-					<>
+				{projects.map((project) => (
+					<Fragment key={project.id}>
 						<Card
 							imageUrl={project.image.src}
 							imageAlt={project.image.alt}
@@ -26,16 +28,7 @@ const Projects = () => {
 							skills={project.skills}
 							onClick={onClick}
 						/>
-
-						<Modal
-							title={project.title}
-							youtube={project.youtube}
-							skills={project.skills}
-							description={project.description}
-							githubLink={project.github.url}
-							previewLink={project.preview.url}
-						/>
-					</>
+					</Fragment>
 				))}
 			</div>
 		</div>
@@ -44,24 +37,11 @@ const Projects = () => {
 
 export default Projects;
 
-// <div className='card'>
-// 	<div className='card-image'>
-// 		<figure className='image'>
-// 			<img src={project.image.src} alt={project.image.alt} />
-// 		</figure>
-// 	</div>
-
-// 	<div className='card-content pt-4'>
-// 		<div className='content mb-2'>
-// 			<h1 className='title is-5 mb-2'>{project.title}</h1>
-// 			<p className='subtitle-text has-text-primary'>
-// 				{project.skills}
-// 			</p>
-// 		</div>
-// 		<button
-// 			onClick={onClick}
-// 			className='button is-warning is-fullwidth ct-btn'>
-// 			Learn more
-// 		</button>
-// 	</div>
-// </div>;
+// <Modal
+// 	title={project.title}
+// 	youtube={project.youtube}
+// 	skills={project.skills}
+// 	description={project.description}
+// 	githubLink={project.github.url}
+// 	previewLink={project.preview.url}
+// />

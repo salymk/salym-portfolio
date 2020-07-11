@@ -29,6 +29,13 @@ $link: hsl(0, 0%, 21%);
 	font-size: 15px;
 }
 
+.subtitle-text-modal {
+	// font-family: 'Dancing Script', cursive;
+	font-family: 'Architects Daughter', cursive;
+
+	font-size: 20px;
+}
+
 .content-size {
 	font-size: 14px;
 }
@@ -224,7 +231,7 @@ textarea.textarea:focus {
 }
 
 .fa-phone {
-	-ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)';
+	// -ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)';
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
 }

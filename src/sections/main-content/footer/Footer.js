@@ -22,9 +22,9 @@ const Footer = () => {
 								smooth={true}
 								offset={-100}
 								duration={1000}>
-								<a onClick={onClick} className='title is-4 footer-title'>
+								<span onClick={onClick} className='title is-4 footer-title'>
 									Salym Akhmedov
-								</a>
+								</span>
 							</Link>
 						</div>
 					</div>
@@ -36,9 +36,9 @@ const Footer = () => {
 							smooth={true}
 							offset={-100}
 							duration={1000}>
-							<a onClick={onClick} className='footer-link'>
+							<span onClick={onClick} className='footer-link'>
 								About
-							</a>
+							</span>
 						</Link>
 
 						<Link
@@ -48,9 +48,9 @@ const Footer = () => {
 							smooth={true}
 							offset={-100}
 							duration={1000}>
-							<a onClick={onClick} className='footer-link'>
+							<span onClick={onClick} className='footer-link'>
 								Portfolio
-							</a>
+							</span>
 						</Link>
 
 						<Link
@@ -60,9 +60,9 @@ const Footer = () => {
 							smooth={true}
 							offset={-100}
 							duration={1000}>
-							<a onClick={onClick} className='footer-link'>
+							<span onClick={onClick} className='footer-link'>
 								Tools
-							</a>
+							</span>
 						</Link>
 
 						<Link
@@ -72,9 +72,9 @@ const Footer = () => {
 							smooth={true}
 							offset={-100}
 							duration={1000}>
-							<a onClick={onClick} className='footer-link'>
+							<span onClick={onClick} className='footer-link'>
 								Contact
-							</a>
+							</span>
 						</Link>
 					</div>
 				</div>

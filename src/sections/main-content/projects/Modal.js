@@ -27,10 +27,9 @@ const Modal = (props) => {
 						frameborder='0'
 						title='Project video'
 						allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-						allowfullscreen
 					/>
 
-					<p className='subtitle-text has-text-primary mt-3 mb-3'>
+					<p className='subtitle-text-modal has-text-primary mt-3 mb-3'>
 						{props.skills}
 					</p>
 					<div className='content content-size'>{props.description}</div>

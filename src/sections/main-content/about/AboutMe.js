@@ -23,7 +23,7 @@ const AboutMe = () => {
 						coding, with a desire to apply his skills on larger development
 						teams. Eager to tackle more complex projects and continue to find
 						ways to maximize user experience.
-						<a className='is-primary'>
+						<span className='is-primary'>
 							<Link
 								activeClass='active'
 								to='contact'
@@ -36,7 +36,7 @@ const AboutMe = () => {
 									Let's create something great together!
 								</span>
 							</Link>
-						</a>
+						</span>
 					</p>
 				</div>
 			</div>
