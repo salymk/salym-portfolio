@@ -59,6 +59,15 @@ $navbar-box-shadow-color: $primary;
 $navbar-box-shadow-size: 0 3px 0 0;
 $navbar-height: 2.8rem;
 
+.navbar-item {
+	&:hover {
+		background-color: hsl(0, 0%, 98%);
+		.nav-span {
+			color: $primary;
+		}
+	}
+}
+
 .active {
 	background-color: hsl(0, 0%, 98%);
 }
