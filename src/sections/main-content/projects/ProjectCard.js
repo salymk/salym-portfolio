@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectCard = (props) => {
 	return (
-		<div className='card'>
+		<div className='card' key={props.key}>
 			<div className='card-image'>
 				<figure className='image'>
 					<img src={props.imageUrl} alt={props.imageAlt} />
