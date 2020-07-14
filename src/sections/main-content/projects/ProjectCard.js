@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = (props) => {
+const ProjectCard = (props) => {
 	return (
 		<div className='card'>
 			<div className='card-image'>
@@ -24,4 +24,4 @@ const Card = (props) => {
 	);
 };
 
-export default Card;
+export default ProjectCard;

@@ -1,15 +1,13 @@
 import React, { useState, Fragment } from 'react';
-import Modal from './Modal';
-import Card from './Card';
+import Modal from 'react-modal';
+import ProjectCard from './ProjectCard';
 import projectsData from '../../../data/projectsData';
 
 const Projects = () => {
 	const [projects, setProjects] = useState(projectsData);
+	const [openModal, setOpenModal] = useState(false);
 
-	const onClick = () => {
-		let modal = document.querySelector('.modal');
-		modal.classList.toggle('is-active');
-	};
+	const renderModal = () => {};
 
 	return (
 		<div className='section has-background-white-bis'>
@@ -21,13 +19,18 @@ const Projects = () => {
 			<div className='container mt-6 grid-cards grid-gap'>
 				{projects.map((project) => (
 					<Fragment key={project.id}>
-						<Card
+						<ProjectCard
 							imageUrl={project.image.src}
 							imageAlt={project.image.alt}
 							title={project.title}
 							skills={project.skills}
-							onClick={onClick}
+							onClick={() => setOpenModal(true)}
 						/>
+						<Modal isOpen={openModal}>
+							<h2>{project.title}</h2>
+							<p>{project.description}</p>
+							<button onClick={() => setOpenModal(false)}>Close</button>
+						</Modal>
 					</Fragment>
 				))}
 			</div>
@@ -44,4 +47,4 @@ export default Projects;
 // 	description={project.description}
 // 	githubLink={project.github.url}
 // 	previewLink={project.preview.url}
-// />
+// />;

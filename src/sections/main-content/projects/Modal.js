@@ -1,19 +1,19 @@
 import React from 'react';
 
 const Modal = (props) => {
-	const onClick = () => {
+	const toggle = () => {
 		let modal = document.querySelector('.modal');
 		modal.classList.toggle('is-active');
 	};
 
 	return (
-		<div className='modal has-text-centered'>
+		<div className='modal has-text-centered is-active'>
 			<div className='modal-background' />
 			<div className='modal-card'>
 				<header className='modal-card-head'>
 					<p className='modal-card-title'>{props.title}</p>
 					<button
-						onClick={onClick}
+						onClick={toggle}
 						className='delete is-medium'
 						aria-label='close'
 					/>
@@ -51,7 +51,7 @@ const Modal = (props) => {
 							className='button ct-btn is-warning'>
 							{props.previewLink ? 'Live Preview' : 'No Preview'}
 						</a>
-						<button onClick={onClick} className='button ct-btn is-danger'>
+						<button onClick={toggle} className='button ct-btn is-danger'>
 							Close
 						</button>
 					</div>
