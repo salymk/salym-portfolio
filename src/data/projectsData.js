@@ -9,7 +9,7 @@ import weatherJournalIMG from '../images/portfolio/weather-journal3.png';
 
 export default [
 	{
-		id: '1',
+		id: 1,
 		title: 'Employee Directory',
 		skills: 'HTML / CSS / JS',
 		description:
@@ -29,7 +29,7 @@ export default [
 		youtube: 'https://www.youtube.com/embed/myS31QFXorY?rel=0&mute=1',
 	},
 	{
-		id: '2',
+		id: 2,
 		title: 'Game Show App',
 		skills: 'HTML / CSS / JS',
 		description:
@@ -49,7 +49,7 @@ export default [
 		youtube: 'https://www.youtube.com/embed/CKXwgu_RREo?rel=0',
 	},
 	{
-		id: '3',
+		id: 3,
 		title: 'Web App Dashboard',
 		skills: 'HTML / CSS / JS / SVG Graphics',
 		description:
@@ -69,7 +69,7 @@ export default [
 		youtube: 'https://www.youtube.com/embed/_OomMBaIAg8',
 	},
 	{
-		id: '4',
+		id: 4,
 		title: 'Interactive Photo Gallery',
 		skills: 'HTML / CSS / JS / JQuery',
 		description:
@@ -89,7 +89,7 @@ export default [
 		youtube: 'https://www.youtube.com/embed/lpopl2mr-0I?rel=0',
 	},
 	{
-		id: '5',
+		id: 5,
 		title: 'Weather Journal Web App',
 		skills: 'HTML / CSS / Bootstrap / JS / Node / Express',
 		description:
@@ -108,7 +108,7 @@ export default [
 		},
 	},
 	{
-		id: '6',
+		id: 6,
 		title: 'Online Registration Form',
 		skills: 'HTML / CSS',
 		description:
@@ -128,7 +128,7 @@ export default [
 		youtube: 'https://www.youtube.com/embed/xRp-uBVT1TQ?rel=0',
 	},
 	{
-		id: '7',
+		id: 7,
 		title: 'Mobile-first Responsive Layout',
 		skills: 'HTML / CSS',
 		description:
@@ -148,7 +148,7 @@ export default [
 		youtube: 'https://www.youtube.com/embed/Z7zacqTy-vQ?rel=0',
 	},
 	{
-		id: '8',
+		id: 8,
 		title: 'Personal Blog',
 		skills: 'HTML / CSS',
 		description:
