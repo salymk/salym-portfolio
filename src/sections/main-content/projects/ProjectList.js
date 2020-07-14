@@ -11,6 +11,15 @@ const customStyles = {
 		bottom: 'auto',
 		marginRight: '-50%',
 		transform: 'translate(-50%, -50%)',
+		background: '#fff',
+	},
+	overlay: {
+		position: 'fixed',
+		top: 0,
+		left: 0,
+		right: 0,
+		bottom: 0,
+		backgroundColor: 'rgba(255, 255, 255, 0.75)',
 	},
 };
 
@@ -21,6 +30,9 @@ const ProjectList = () => {
 
 	const onOpenModal = (i) => {
 		setOpen(true);
+		{
+			/* Store the id of the clicked on project*/
+		}
 		setSelectedProject(i);
 	};
 
@@ -28,6 +40,9 @@ const ProjectList = () => {
 		setOpen(false);
 	};
 
+	{
+		/*This method creates a card for each project, with a button to open a modal.*/
+	}
 	const renderProjects = () => {
 		return projects.map((project, i) => {
 			return (
@@ -43,6 +58,12 @@ const ProjectList = () => {
 		});
 	};
 
+	{
+		/* 
+     This method checks whether or not you clicked 
+    'Learn more' on a project and if you did it creates a modal for it
+    */
+	}
 	const renderModal = () => {
 		if (selectedProject !== null) {
 			const project = projects[selectedProject];
