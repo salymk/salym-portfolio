@@ -3,6 +3,17 @@ import ProjectCard from './ProjectCard';
 import Modal from 'react-modal';
 import projectsData from '../../../data/projectsData';
 
+const customStyles = {
+	content: {
+		top: '50%',
+		left: '50%',
+		right: 'auto',
+		bottom: 'auto',
+		marginRight: '-50%',
+		transform: 'translate(-50%, -50%)',
+	},
+};
+
 const ProjectList = () => {
 	const [projects, setProjects] = useState(projectsData);
 	const [open, setOpen] = useState(false);
@@ -32,6 +43,67 @@ const ProjectList = () => {
 		});
 	};
 
+	const renderModal = () => {
+		if (selectedProject !== null) {
+			const project = projects[selectedProject];
+			return (
+				<React.Fragment className='has-text-centered'>
+					<div className='modal-background' />
+					<div className='modal-card'>
+						<header className='modal-card-head'>
+							<p className='modal-card-title'>{project.title}</p>
+							<button
+								onClick={onCloseModal}
+								className='delete is-medium'
+								aria-label='close'
+							/>
+						</header>
+
+						<section className='modal-card-body'>
+							<iframe
+								width='360'
+								height='215'
+								src={project.youtube}
+								frameborder='0'
+								title='Project video'
+								allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+							/>
+
+							<p className='subtitle-text-modal has-text-primary mt-3 mb-3'>
+								{project.skills}
+							</p>
+							<div className='content content-size'>{project.description}</div>
+						</section>
+						<footer className='modal-card-foot'>
+							<div className='buttons'>
+								<a
+									href={project.githubLink}
+									target='_blank'
+									className='button ct-btn'>
+									<span className='icon'>
+										<i className='fab fa-github' />
+									</span>
+									<span>GitHub</span>
+								</a>
+								<a
+									href={project.previewLink}
+									target='_blank'
+									className='button ct-btn is-warning'>
+									{project.previewLink ? 'Live Preview' : 'No Preview'}
+								</a>
+								<button
+									onClick={onCloseModal}
+									className='button ct-btn is-danger'>
+									Close
+								</button>
+							</div>
+						</footer>
+					</div>
+				</React.Fragment>
+			);
+		}
+	};
+
 	return (
 		<div className='section has-background-white-bis'>
 			<h1
@@ -39,7 +111,16 @@ const ProjectList = () => {
 				id='portfolio'>
 				Portfolio
 			</h1>
-			<div className='container mt-6 grid-cards grid-gap'></div>
+			<div className='container mt-6 grid-cards grid-gap'>
+				{renderProjects()}
+				<Modal
+					style={customStyles}
+					isOpen={open}
+					onRequestClose={onCloseModal}
+					center>
+					<div>{renderModal()}</div>
+				</Modal>
+			</div>
 		</div>
 	);
 };
