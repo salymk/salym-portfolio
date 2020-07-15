@@ -28,16 +28,25 @@ const ProjectList = () => {
 	const [open, setOpen] = useState(false);
 	const [selectedProject, setSelectedProject] = useState(null);
 
+	let windowOffset = 0;
+
 	const onOpenModal = (i) => {
 		setOpen(true);
 		{
 			/* Store the id of the clicked on project*/
 		}
 		setSelectedProject(i);
+		windowOffset = window.scrollY;
+		document.body.setAttribute(
+			'style',
+			`position: fixed; top: -${windowOffset}px; left: 0; right: 0`,
+		);
 	};
 
 	const onCloseModal = () => {
 		setOpen(false);
+		document.body.setAttribute('style', '');
+		window.scrollTo(0, windowOffset);
 	};
 
 	{
