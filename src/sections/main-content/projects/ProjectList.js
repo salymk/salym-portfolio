@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard';
 import Modal from 'react-modal';
 import projectsData from '../../../data/projectsData';
 
-const customStyles = {
+const styles = {
 	content: {
 		top: '50%',
 		left: '50%',
@@ -15,7 +15,7 @@ const customStyles = {
 	},
 	overlay: {
 		position: 'fixed',
-		top: 0,
+		top: 50,
 		left: 0,
 		right: 0,
 		bottom: 0,
@@ -68,58 +68,42 @@ const ProjectList = () => {
 		if (selectedProject !== null) {
 			const project = projects[selectedProject];
 			return (
-				<React.Fragment>
-					<div className='modal-card'>
-						<header className='modal-card-head'>
-							<p className='modal-card-title'>{project.title}</p>
-							<button
-								onClick={onCloseModal}
-								className='delete is-medium'
-								aria-label='close'
-							/>
-						</header>
+				<div className='container has-text-centered	'>
+					<h3 className='title is-3 '>{project.title}</h3>
+					<iframe
+						width='360'
+						height='215'
+						src={project.youtube}
+						frameBorder='0'
+						title='Project video'
+						allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+					/>
+					<p className='subtitle is-5 subtitle-text has-text-primary mt-3 mb-3'>
+						{project.skills}
+					</p>
+					<p className='content modal-content-size'>{project.description}</p>
+					<div className='buttons is-centered'>
+						<a
+							href={project.github.url}
+							target='_blank'
+							className='button is-light ct-btn'>
+							<span className='icon'>
+								<i className='fab fa-github' />
+							</span>
+							<span>GitHub</span>
+						</a>
 
-						<section className='modal-card-body'>
-							<iframe
-								width='360'
-								height='215'
-								src={project.youtube}
-								frameBorder='0'
-								title='Project video'
-								allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-							/>
-
-							<p className='subtitle-text-modal has-text-primary mt-3 mb-3'>
-								{project.skills}
-							</p>
-							<div className='content content-size'>{project.description}</div>
-						</section>
-						<footer className='modal-card-foot'>
-							<div className='buttons'>
-								<a
-									href={project.githubLink}
-									target='_blank'
-									className='button ct-btn'>
-									<span className='icon'>
-										<i className='fab fa-github' />
-									</span>
-									<span>GitHub</span>
-								</a>
-								<a
-									href={project.previewLink}
-									target='_blank'
-									className='button ct-btn is-warning'>
-									{project.previewLink ? 'Live Preview' : 'No Preview'}
-								</a>
-								<button
-									onClick={onCloseModal}
-									className='button ct-btn is-danger'>
-									Close
-								</button>
-							</div>
-						</footer>
+						<a
+							href={project.preview.url}
+							target='_blank'
+							className='button ct-btn is-warning'>
+							{project.preview.url ? 'Live Preview' : 'No Preview'}
+						</a>
+						<button onClick={onCloseModal} className='button ct-btn is-danger'>
+							Close
+						</button>
 					</div>
-				</React.Fragment>
+				</div>
 			);
 		}
 	};
@@ -134,7 +118,7 @@ const ProjectList = () => {
 			<div className='container mt-6 grid-cards grid-gap'>
 				{renderProjects()}
 				<Modal
-					style={customStyles}
+					style={styles}
 					isOpen={open}
 					onRequestClose={onCloseModal}
 					center>
