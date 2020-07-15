@@ -50,7 +50,7 @@ export default [
 	},
 	{
 		id: 3,
-		title: 'Web App Dashboard',
+		title: 'Web Dashboard',
 		skills: 'HTML / CSS / JS / SVG Graphics',
 		description:
 			'Built an interactive dashboard for a web app using SVG graphics. The project involved creating tables, charts, graphics and other user interface components in a manner that promotes interactivity and usability.',
@@ -70,7 +70,7 @@ export default [
 	},
 	{
 		id: 4,
-		title: 'Interactive Photo Gallery',
+		title: 'Photo Gallery',
 		skills: 'HTML / CSS / JS / JQuery',
 		description:
 			'Interactive image galleries are a common feature of many websites, from photo sites to e-commerce applications. Used HTML, CSS and JavaScript to create an interactive, searchable gallery of photos.',
@@ -90,7 +90,7 @@ export default [
 	},
 	{
 		id: 5,
-		title: 'Weather Journal Web App',
+		title: 'Weather Journal App',
 		skills: 'HTML / CSS / Bootstrap / JS / Node / Express',
 		description:
 			'Dispatched a Node and Express environment to develop a weather journal web app that updates and modifies website elements dynamically using asynchronously retrieved data pulled from OpenWeatherMap API.',
@@ -104,12 +104,12 @@ export default [
 		},
 		image: {
 			src: weatherJournalIMG,
-			alt: 'Weather Journal Web App',
+			alt: 'Weather Journal App',
 		},
 	},
 	{
 		id: 6,
-		title: 'Online Registration Form',
+		title: 'Registration Form',
 		skills: 'HTML / CSS',
 		description:
 			'Built a responsive, mobile-first registration form using a variety of HTML form elements and styled it with CSS.',
@@ -129,7 +129,7 @@ export default [
 	},
 	{
 		id: 7,
-		title: 'Mobile-first Responsive Layout',
+		title: 'Responsive Layout',
 		skills: 'HTML / CSS',
 		description:
 			'Using HTML, CSS, and responsive design, built a mobile-first web page with a layout that adjusts to fit mobile phones, tablets, and desktop displays.',
