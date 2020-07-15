@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
 				</figure>
 			</div>
 
-			<div className='card-content pt-4'>
+			<div className='card-content pt-4 has-text-centered'>
 				<div className='content mb-2'>
 					<h1 className='title is-5 mb-2'>{props.title}</h1>
 					<p className='subtitle-text has-text-primary'>{props.skills}</p>
