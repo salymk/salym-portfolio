@@ -109,6 +109,15 @@ const Navbar = () => {
 					<div className='navbar-item mr-6'>
 						<div className='field is-grouped'>
 							<a
+								href='mailto:khokumdarakhmedov@gmail.com'
+								className='has-text-grey-darker mr-3'>
+								<i className='fas fa-2x fa-envelope-square'></i>
+							</a>
+							<a href='tel:720-226-1054' className='has-text-grey-darker mr-3'>
+								<i className='fas fa-2x fa-phone-square-alt'></i>
+							</a>
+
+							<a
 								href='https://github.com/salymk'
 								target='_blank'
 								className='has-text-grey-darker mr-3'>

@@ -111,6 +111,20 @@ $navbar-height: 2.8rem;
 	}
 }
 
+.fa-phone-square-alt {
+	transition: 0.1s;
+	&:hover {
+		color: $primary;
+	}
+}
+
+.fa-envelope-square {
+	transition: 0.1s;
+	&:hover {
+		color: $primary;
+	}
+}
+
 /* ============================================= */
 /*              About styles                     */
 /* ============================================= */
