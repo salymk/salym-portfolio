@@ -36,6 +36,10 @@ const ProjectList = () => {
 			/* Store the id of the clicked on project*/
 		}
 		setSelectedProject(i);
+
+		{
+			/* To prevent body from scrolling when a modal is opened */
+		}
 		windowOffset = window.scrollY;
 		document.body.setAttribute(
 			'style',
@@ -45,6 +49,7 @@ const ProjectList = () => {
 
 	const onCloseModal = () => {
 		setOpen(false);
+
 		document.body.setAttribute('style', '');
 		window.scrollTo(0, windowOffset);
 	};
