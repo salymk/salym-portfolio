@@ -36,7 +36,7 @@ const ProjectList = () => {
 		setSelectedProject(i);
 	};
 
-	const onCloseModal = (i) => {
+	const onCloseModal = () => {
 		setOpen(false);
 	};
 
@@ -68,8 +68,7 @@ const ProjectList = () => {
 		if (selectedProject !== null) {
 			const project = projects[selectedProject];
 			return (
-				<React.Fragment className='has-text-centered'>
-					<div className='modal-background' />
+				<React.Fragment>
 					<div className='modal-card'>
 						<header className='modal-card-head'>
 							<p className='modal-card-title'>{project.title}</p>
@@ -85,7 +84,7 @@ const ProjectList = () => {
 								width='360'
 								height='215'
 								src={project.youtube}
-								frameborder='0'
+								frameBorder='0'
 								title='Project video'
 								allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
 							/>
@@ -145,5 +144,10 @@ const ProjectList = () => {
 		</div>
 	);
 };
+
+{
+	/*For Accessibility*/
+}
+Modal.setAppElement('#root');
 
 export default ProjectList;
