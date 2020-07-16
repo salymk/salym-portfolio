@@ -7,6 +7,7 @@ const ProjectList = () => {
 	const [open, setOpen] = useState(false);
 	const [selectedProject, setSelectedProject] = useState(null);
 
+	/* To prevent page scroll*/
 	let htmlTag = document.getElementById('html');
 
 	const onOpenModal = (i) => {
@@ -68,11 +69,11 @@ const ProjectList = () => {
 						</header>
 						<section className='modal-card-body'>
 							<iframe
-								width='400'
+								width='85%'
 								height='215'
 								src={project.youtube}
 								frameBorder='0'
-								title='Project video'
+								title={project.title}
 								allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
 							/>
 							<p className='subtitle-text has-text-primary mt-3 mb-3'>
