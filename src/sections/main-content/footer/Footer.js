@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
 	const onClick = () => {
@@ -85,6 +85,7 @@ const Footer = () => {
 							<a
 								href='https://github.com/salymk'
 								target='_blank'
+								rel='noopener noreferrer'
 								className='has-text-grey-darker mr-3'>
 								<i className='fab fa-2x fa-github-square'></i>
 							</a>
@@ -92,6 +93,7 @@ const Footer = () => {
 							<a
 								href='https://www.linkedin.com/in/salym-akhmedov/'
 								target='_blank'
+								rel='noopener noreferrer'
 								className='has-text-grey-darker'>
 								<i className='fab fa-2x fa-linkedin'></i>
 							</a>

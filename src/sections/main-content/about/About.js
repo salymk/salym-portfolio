@@ -1,7 +1,5 @@
 import React from 'react';
 import AboutMe from './AboutMe';
-import Skills from './Skills';
-import Salym2 from '../../../images/mountain-salym.jpg';
 
 const About = () => {
 	return (

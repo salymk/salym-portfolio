@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import Salym2 from '../../../images/mountain-salym.jpg';
 
 const AboutMe = () => {

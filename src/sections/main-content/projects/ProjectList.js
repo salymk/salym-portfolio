@@ -87,6 +87,7 @@ const ProjectList = () => {
 								<a
 									href={project.github.url}
 									target='_blank'
+									rel='noopener noreferrer'
 									className='button is-white ct-btn'>
 									<span className='icon'>
 										<i className='fab fa-github' />
@@ -97,6 +98,7 @@ const ProjectList = () => {
 								<a
 									href={project.preview.url}
 									target='_blank'
+									rel='noopener noreferrer'
 									className='button ct-btn is-warning'>
 									{project.preview.url ? 'Live Preview' : 'No Preview'}
 								</a>
