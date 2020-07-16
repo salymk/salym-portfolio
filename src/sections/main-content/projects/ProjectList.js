@@ -31,7 +31,6 @@ const ProjectList = () => {
 	}
 
 	/*This method creates a card for each project, with a button to open a modal.*/
-
 	const renderProjects = () => {
 		return projects.map((project, i) => {
 			return (
@@ -51,7 +50,6 @@ const ProjectList = () => {
      This method checks whether or not you clicked 
     'Learn more' on a project and if you did it creates a modal for it
   */
-
 	const renderModal = () => {
 		if (selectedProject !== null) {
 			const project = projects[selectedProject];
@@ -70,7 +68,7 @@ const ProjectList = () => {
 						</header>
 						<section className='modal-card-body'>
 							<iframe
-								width='360'
+								width='400'
 								height='215'
 								src={project.youtube}
 								frameBorder='0'
@@ -94,14 +92,18 @@ const ProjectList = () => {
 									</span>
 									<span>GitHub</span>
 								</a>
-
-								<a
-									href={project.preview.url}
-									target='_blank'
-									rel='noopener noreferrer'
-									className='button ct-btn is-warning'>
-									{project.preview.url ? 'Live Preview' : 'No Preview'}
-								</a>
+								{/* If there's no preview link then don't render a button. */}
+								{project.preview.url ? (
+									<a
+										href={project.preview.url}
+										target='_blank'
+										rel='noopener noreferrer'
+										className='button ct-btn is-warning'>
+										{project.preview.url ? 'Live preview' : ''}
+									</a>
+								) : (
+									''
+								)}
 								<button
 									onClick={onCloseModal}
 									className='button ct-btn is-danger'>
