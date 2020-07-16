@@ -3,7 +3,7 @@ import React from 'react';
 const ContactInfo = () => {
 	return (
 		<div className='column is-6'>
-			<h4 className='title is-spaced is-4'>
+			<h4 className='title is-spaced is-4 has-text-centered-mobile'>
 				Have a question or want to work together?
 			</h4>
 
