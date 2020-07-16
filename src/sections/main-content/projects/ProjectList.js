@@ -7,11 +7,12 @@ const ProjectList = () => {
 	const [open, setOpen] = useState(false);
 	const [selectedProject, setSelectedProject] = useState(null);
 
+	let htmlTag = document.getElementById('html');
+
 	const onOpenModal = (i) => {
 		setOpen(true);
 
 		/* Store the id of the clicked on project*/
-
 		setSelectedProject(i);
 	};
 
@@ -20,8 +21,14 @@ const ProjectList = () => {
 	};
 
 	/* Condition for opening and closing modal */
-
 	const active = open ? 'is-active' : '';
+
+	/* Condition for preventing page scroll when a modal is active */
+	if (active) {
+		htmlTag.classList.add('is-clipped');
+	} else {
+		htmlTag.classList.remove('is-clipped');
+	}
 
 	/*This method creates a card for each project, with a button to open a modal.*/
 
