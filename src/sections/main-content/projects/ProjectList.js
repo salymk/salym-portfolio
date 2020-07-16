@@ -4,22 +4,29 @@ import Modal from 'react-modal';
 import projectsData from '../../../data/projectsData';
 
 const styles = {
-	content: {
-		top: '50%',
-		left: '50%',
-		right: 'auto',
-		bottom: 'auto',
-		marginRight: '-50%',
-		transform: 'translate(-50%, -50%)',
-		background: '#fff',
-	},
 	overlay: {
 		position: 'fixed',
-		top: 50,
+		top: 0,
 		left: 0,
 		right: 0,
 		bottom: 0,
 		backgroundColor: 'rgba(255, 255, 255, 0.75)',
+	},
+	content: {
+		position: 'absolute',
+		width: '420px',
+		margin: '0 auto',
+		top: '40px',
+		left: '40px',
+		right: '40px',
+		bottom: '40px',
+		border: '1px solid #ccc',
+		background: '#fff',
+		overflow: 'auto',
+		WebkitOverflowScrolling: 'touch',
+		borderRadius: '4px',
+		outline: 'none',
+		padding: '20px',
 	},
 };
 
@@ -82,10 +89,10 @@ const ProjectList = () => {
 		if (selectedProject !== null) {
 			const project = projects[selectedProject];
 			return (
-				<div className='container has-text-centered	'>
-					<h3 className='title is-3 '>{project.title}</h3>
+				<div className='container has-text-centered'>
+					<h3 className='title is-3 is-size-4-mobile '>{project.title}</h3>
 					<iframe
-						width='360'
+						width='75%'
 						height='215'
 						src={project.youtube}
 						frameBorder='0'
@@ -95,7 +102,10 @@ const ProjectList = () => {
 					<p className='subtitle is-5 subtitle-text has-text-primary mt-3 mb-3'>
 						{project.skills}
 					</p>
-					<p className='content modal-content-size'>{project.description}</p>
+					<div className='content modal-content has-text-centered'>
+						<p>{project.description}</p>
+					</div>
+
 					<div className='buttons is-centered'>
 						<a
 							href={project.github.url}
@@ -132,6 +142,7 @@ const ProjectList = () => {
 			<div className='container mt-6 grid-cards grid-gap'>
 				{renderProjects()}
 				<Modal
+					className={modal}
 					style={styles}
 					isOpen={open}
 					onRequestClose={onCloseModal}
@@ -149,3 +160,42 @@ const ProjectList = () => {
 Modal.setAppElement('#root');
 
 export default ProjectList;
+
+// <h3 className='title is-3 is-size-4-mobile '>{project.title}</h3>
+// 					<iframe
+// 						min-width='320'
+// 						max-width='400'
+// 						height='215'
+// 						src={project.youtube}
+// 						frameBorder='0'
+// 						title='Project video'
+// 						allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+// 					/>
+// 					<p className='subtitle is-5 subtitle-text has-text-primary mt-3 mb-3'>
+// 						{project.skills}
+// 					</p>
+// 					<div className='content has-text-centered'>
+// 						<p>{project.description}</p>
+// 					</div>
+
+// 					<div className='buttons is-centered'>
+// 						<a
+// 							href={project.github.url}
+// 							target='_blank'
+// 							className='button is-light ct-btn'>
+// 							<span className='icon'>
+// 								<i className='fab fa-github' />
+// 							</span>
+// 							<span>GitHub</span>
+// 						</a>
+
+// 						<a
+// 							href={project.preview.url}
+// 							target='_blank'
+// 							className='button ct-btn is-warning'>
+// 							{project.preview.url ? 'Live Preview' : 'No Preview'}
+// 						</a>
+// 						<button onClick={onCloseModal} className='button ct-btn is-danger'>
+// 							Close
+// 						</button>
+// 					</div>

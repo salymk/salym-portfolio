@@ -125,11 +125,6 @@ fieldset[disabled] .file-name {
 /* ============================================= */
 /*              Base Styles                      */
 /* ============================================= */
-.modal-content-size {
-  width: 35em;
-  text-align: center;
-}
-
 .link-hover:hover {
   color: #00d1b2;
 }
