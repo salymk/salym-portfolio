@@ -277,6 +277,13 @@ textarea.textarea:focus {
 /*              Responsive styles                */
 /* ============================================= */
 
+// @media only screen and (min-width: 768px) {
+// 	.field.is-grouped {
+// 		flex-direction: row;
+// 		justify-content: flex-end;
+// 	}
+// }
+
 @media only screen and (max-width: 768px) {
 	.custom-img {
 		display: block;

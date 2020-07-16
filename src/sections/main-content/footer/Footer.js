@@ -12,7 +12,7 @@ const Footer = () => {
 	return (
 		<footer className='footer'>
 			<div className='container'>
-				<div className='level'>
+				<div className='level has-text-centered-mobile'>
 					<div className='level-left'>
 						<div className='level-item'>
 							<Link
@@ -79,9 +79,9 @@ const Footer = () => {
 					</div>
 				</div>
 				<hr />
-				<div className='columns'>
-					<div className='column'>
-						<div className='field is-grouped'>
+				<div className='columns is-centered'>
+					<div className='column has-text-centered-mobile'>
+						<div className='field'>
 							<a
 								href='https://github.com/salymk'
 								target='_blank'
@@ -99,7 +99,7 @@ const Footer = () => {
 							</a>
 						</div>
 					</div>
-					<div className='column has-text-centered has-text-right-tablet'>
+					<div className='column has-text-centered-mobile has-text-right-tablet'>
 						<p className='subtitle is-6'>
 							© 2020 Salym Akhmedov. All right reserved.
 						</p>
