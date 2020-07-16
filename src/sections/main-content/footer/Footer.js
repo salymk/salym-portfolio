@@ -2,13 +2,6 @@ import React from 'react';
 import { Link } from 'react-scroll';
 
 const Footer = () => {
-	const onClick = () => {
-		let toggle = document.querySelector('.navbar-burger');
-		let menu = document.querySelector('.navbar-menu');
-		toggle.classList.toggle('is-active');
-		menu.classList.toggle('is-active');
-	};
-
 	return (
 		<footer className='footer'>
 			<div className='container'>
@@ -22,9 +15,7 @@ const Footer = () => {
 								smooth={true}
 								offset={-100}
 								duration={1000}>
-								<span onClick={onClick} className='title is-4 footer-title'>
-									Salym Akhmedov
-								</span>
+								<span className='title is-4 footer-title'>Salym Akhmedov</span>
 							</Link>
 						</div>
 					</div>
@@ -36,9 +27,7 @@ const Footer = () => {
 							smooth={true}
 							offset={-100}
 							duration={1000}>
-							<span onClick={onClick} className='footer-link'>
-								About
-							</span>
+							<span className='footer-link'>About</span>
 						</Link>
 
 						<Link
@@ -48,9 +37,7 @@ const Footer = () => {
 							smooth={true}
 							offset={-100}
 							duration={1000}>
-							<span onClick={onClick} className='footer-link'>
-								Portfolio
-							</span>
+							<span className='footer-link'>Portfolio</span>
 						</Link>
 
 						<Link
@@ -60,9 +47,7 @@ const Footer = () => {
 							smooth={true}
 							offset={-100}
 							duration={1000}>
-							<span onClick={onClick} className='footer-link'>
-								Tools
-							</span>
+							<span className='footer-link'>Tools</span>
 						</Link>
 
 						<Link
@@ -72,9 +57,7 @@ const Footer = () => {
 							smooth={true}
 							offset={-100}
 							duration={1000}>
-							<span onClick={onClick} className='footer-link'>
-								Contact
-							</span>
+							<span className='footer-link'>Contact</span>
 						</Link>
 					</div>
 				</div>
