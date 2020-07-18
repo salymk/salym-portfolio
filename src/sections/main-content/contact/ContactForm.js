@@ -1,8 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers';
-import yup from 'yup';
-
+import * as yup from 'yup';
 const schema = yup.object().shape({
 	Name: yup.string().required(),
 	Email: yup.string().email().required(),
@@ -10,7 +9,9 @@ const schema = yup.object().shape({
 });
 
 const ContactForm = () => {
-	const { register, handleSubmit, errors } = useForm();
+	const { register, handleSubmit, errors } = useForm({
+		resolver: yupResolver(schema),
+	});
 
 	const onSubmit = (data) => {
 		console.log(data);
@@ -22,21 +23,51 @@ const ContactForm = () => {
 		<div className='column is-5 is-offset-1'>
 			<form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
 				<div className='field'>
-					<div className='control'>
-						<input className='input' type='text' placeholder='Name' />
+					<div className='control has-icons-left'>
+						<input
+							className={`input ${errors.Name ? 'is-danger' : ''}`}
+							type='text'
+							placeholder='Name'
+							name='Name'
+							ref={register}
+						/>
+						<span className='icon is-small is-left'>
+							<i className='fas fa-user' />
+						</span>
+						<p className={`help ${errors.Name ? 'is-danger' : ''}`}>
+							{errors.Name?.message}
+						</p>
 					</div>
 				</div>
 				<div className='field'>
-					<div className='control'>
-						<input className='input' type='email' placeholder='Email' />
+					<div className='control has-icons-left'>
+						<input
+							className={`input ${errors.Email ? 'is-danger' : ''}`}
+							type='email'
+							placeholder='Email'
+							name='Email'
+							ref={register}
+						/>
+						<span className='icon is-small is-left'>
+							<i className='fas fa-envelope' />
+						</span>
+						<p className={`help ${errors.Email ? 'is-danger' : ''}`}>
+							{errors.Email?.message}
+						</p>
 					</div>
 				</div>
 				<div className='field'>
 					<div className='control'>
 						<textarea
-							className='textarea'
-							rows='5'
-							placeholder='Message'></textarea>
+							className={`textarea ${errors.Message ? 'is-danger' : ''}`}
+							type='text'
+							placeholder='Message'
+							name='Message'
+							ref={register}
+						/>
+						<p className={`help is-1 ${errors.Message ? 'is-danger' : ''}`}>
+							{errors.Message?.message}
+						</p>
 					</div>
 				</div>
 				<div className='field'>
