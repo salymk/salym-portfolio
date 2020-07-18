@@ -4,9 +4,17 @@ import { yupResolver } from '@hookform/resolvers';
 import yup from 'yup';
 
 const ContactForm = () => {
+	const { register, handleSubmit, errors } = useForm();
+
+	const onSubmit = (data) => {
+		console.log(data);
+
+		document.getElementById('contact-form').reset();
+	};
+
 	return (
 		<div className='column is-5 is-offset-1'>
-			<form>
+			<form id='contact-form'>
 				<div className='field'>
 					<div className='control'>
 						<input className='input' type='text' placeholder='Name' />
