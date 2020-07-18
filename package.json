@@ -3,16 +3,19 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@hookform/resolvers": "0.0.6",
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/react": "^9.5.0",
 		"@testing-library/user-event": "^7.2.1",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
+		"react-hook-form": "^6.0.7",
 		"react-iframe": "^1.8.0",
 		"react-modal": "^3.11.2",
 		"react-particles-js": "^3.2.1",
 		"react-scripts": "^3.4.1",
-		"react-scroll": "^1.7.16"
+		"react-scroll": "^1.7.16",
+		"yup": "^0.29.1"
 	},
 	"scripts": {
 		"start": "react-scripts start",
