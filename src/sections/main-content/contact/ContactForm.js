@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers';
 import * as yup from 'yup';
+import axios from 'axios';
 const schema = yup.object().shape({
 	Name: yup.string().required(),
 	Email: yup.string().email().required(),
@@ -15,6 +16,14 @@ const ContactForm = () => {
 
 	const onSubmit = (data) => {
 		console.log(data);
+		axios
+			.post('https://formspree.io/mvowvdgd', data)
+			.then((response) => {
+				console.log(response);
+			})
+			.catch((error) => {
+				console.log(error);
+			});
 
 		document.getElementById('contact-form').reset();
 	};
