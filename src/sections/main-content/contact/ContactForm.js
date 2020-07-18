@@ -3,6 +3,12 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers';
 import yup from 'yup';
 
+const schema = yup.object().shape({
+	Name: yup.string().required(),
+	Email: yup.string().email().required(),
+	Message: yup.string().required(),
+});
+
 const ContactForm = () => {
 	const { register, handleSubmit, errors } = useForm();
 
@@ -14,7 +20,7 @@ const ContactForm = () => {
 
 	return (
 		<div className='column is-5 is-offset-1'>
-			<form id='contact-form'>
+			<form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
 				<div className='field'>
 					<div className='control'>
 						<input className='input' type='text' placeholder='Name' />
