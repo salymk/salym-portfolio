@@ -106,6 +106,7 @@ export default [
 			src: weatherJournalIMG,
 			alt: 'Weather Journal App',
 		},
+		youtube: 'https://www.youtube.com/embed/fsXydnM2UYM?rel=0',
 	},
 	{
 		id: 6,
@@ -165,5 +166,6 @@ export default [
 			src: blogSiteIMG,
 			alt: 'Personal Blog',
 		},
+		youtube: 'https://www.youtube.com/embed/SJIF07FnOTQ?rel=0',
 	},
 ];
