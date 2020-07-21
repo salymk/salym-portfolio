@@ -70,7 +70,7 @@ const Footer = () => {
 								target='_blank'
 								rel='noopener noreferrer'
 								className='has-text-grey-darker mr-3'>
-								<i className='fab fa-2x fa-github-square'></i>
+								<i className='fab fa-2x fa-github-square logo-hover'></i>
 							</a>
 
 							<a
@@ -78,7 +78,7 @@ const Footer = () => {
 								target='_blank'
 								rel='noopener noreferrer'
 								className='has-text-grey-darker'>
-								<i className='fab fa-2x fa-linkedin'></i>
+								<i className='fab fa-2x fa-linkedin logo-hover'></i>
 							</a>
 						</div>
 					</div>
