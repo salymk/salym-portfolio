@@ -111,10 +111,11 @@ const Navbar = () => {
 							<a
 								href='mailto:khokumdarakhmedov@gmail.com'
 								className='has-text-grey-darker mr-3'>
-								<i className='fas fa-2x fa-envelope-square'></i>
+								<i className='fas fa-2x fa-envelope-square logo-hover'></i>
 							</a>
+
 							<a href='tel:720-226-1054' className='has-text-grey-darker mr-3'>
-								<i className='fas fa-2x fa-phone-square-alt'></i>
+								<i className='fas fa-2x fa-phone-square-alt logo-hover'></i>
 							</a>
 
 							<a
@@ -122,7 +123,7 @@ const Navbar = () => {
 								target='_blank'
 								rel='noopener noreferrer'
 								className='has-text-grey-darker mr-3'>
-								<i className='fab fa-2x fa-github-square'></i>
+								<i className='fab fa-2x fa-github-square logo-hover'></i>
 							</a>
 
 							<a
@@ -130,7 +131,7 @@ const Navbar = () => {
 								target='_blank'
 								rel='noopener noreferrer'
 								className='has-text-grey-darker'>
-								<i className='fab fa-2x fa-linkedin'></i>
+								<i className='fab fa-2x fa-linkedin logo-hover'></i>
 							</a>
 						</div>
 					</div>

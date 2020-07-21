@@ -11,11 +11,21 @@
 /*              Base Styles                      */
 /* ============================================= */
 
+$primary: hsl(171, 100%, 41%);
+$white: hsl(0, 0%, 100%);
+$activeBackground: hsl(0, 0%, 98%);
 $radius: 5px;
 $link: hsl(0, 0%, 21%);
 
-.link-hover:hover {
-	color: $primary;
+@mixin textHover($color) {
+	transition: 0.2s;
+	&:hover {
+		color: $color;
+	}
+}
+
+.link-hover {
+	@include textHover($primary);
 }
 
 .text-size {
@@ -25,14 +35,12 @@ $link: hsl(0, 0%, 21%);
 .subtitle-text {
 	// font-family: 'Dancing Script', cursive;
 	font-family: 'Architects Daughter', cursive;
-
 	font-size: 15px;
 }
 
 .subtitle-text-modal {
 	// font-family: 'Dancing Script', cursive;
 	font-family: 'Architects Daughter', cursive;
-
 	font-size: 20px;
 }
 
@@ -60,16 +68,15 @@ $navbar-box-shadow-size: 0 3px 0 0;
 $navbar-height: 2.8rem;
 
 .navbar-item {
+	transition: 0.2s;
 	&:hover {
-		background-color: hsl(0, 0%, 98%);
-		.nav-span {
-			color: $primary;
-		}
+		background-color: $activeBackground;
+		@include textHover($primary);
 	}
 }
 
 .active {
-	background-color: hsl(0, 0%, 98%);
+	background-color: $activeBackground;
 }
 
 .navbar {
@@ -93,31 +100,8 @@ $navbar-height: 2.8rem;
 	font-weight: lighter;
 }
 
-.fa-github-square {
-	transition: 0.1s;
-	&:hover {
-		color: $primary;
-	}
-}
-.fa-linkedin {
-	transition: 0.1s;
-	&:hover {
-		color: $primary;
-	}
-}
-
-.fa-phone-square-alt {
-	transition: 0.1s;
-	&:hover {
-		color: $primary;
-	}
-}
-
-.fa-envelope-square {
-	transition: 0.1s;
-	&:hover {
-		color: $primary;
-	}
+.logo-hover {
+	@include textHover($primary);
 }
 
 /* ============================================= */
